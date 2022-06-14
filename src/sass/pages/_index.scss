@@ -1,0 +1,36 @@
+$green: #2B6869;
+$peach-gray: #D2CFCE;
+
+hero{
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient($green, $peach-gray);
+}
+
+.hero-background{
+    z-index: 1;
+}
+
+.hero-logo{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+
+.hero-foreground{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+}
+
+.hero-squabs{
+    z-index: 5;
+    position: absolute;
+    bottom: -186px;
+    width: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+}
