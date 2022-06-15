@@ -24,6 +24,10 @@ module.exports = {
         type: "asset",
       },
       {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+      },
+      {
         test: /\.s?css$/i,
         use: [
           {
