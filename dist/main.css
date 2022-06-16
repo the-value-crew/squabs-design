@@ -562,6 +562,9 @@ video {
     max-width: 1536px;
   }
 }
+.invisible {
+  visibility: hidden;
+}
 .z-10 {
   z-index: 10;
 }
@@ -577,9 +580,6 @@ video {
 .bg-brand-black {
   --tw-bg-opacity: 1;
   background-color: rgba(24, 22, 24, var(--tw-bg-opacity));
-}
-.pb-12 {
-  padding-bottom: 3rem;
 }
 .pb-24 {
   padding-bottom: 6rem;
@@ -656,8 +656,13 @@ h6 {
 hero {
   display: block;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2B6869), to(#D2CFCE));
-  background-image: linear-gradient(#2B6869, #D2CFCE);
+  background-image: url(assets/a11a03173a5baf618935.png), -webkit-gradient(linear, left top, left bottom, from(#2b6869), to(#d2cfce));
+  background-image: url(assets/a11a03173a5baf618935.png), linear-gradient(#2b6869, #d2cfce);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-background {
