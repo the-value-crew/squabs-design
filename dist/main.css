@@ -527,6 +527,69 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
+.z-10 {
+  z-index: 10;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.grid {
+  display: grid;
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
 /* bitter-regular - latin */
 @font-face {
   font-family: "Bitter";
@@ -567,14 +630,30 @@ video {
   src: url(assets/4ce640c2d7d45a0f2442.eot); /* IE9 Compat Modes */
   src: local(""), url(assets/4ce640c2d7d45a0f2442.eot?#iefix) format("embedded-opentype"), url(assets/cd46f440902bc2c2f0d6.woff2) format("woff2"), url(assets/8207b45f4afe3c366f49.woff) format("woff"), url(assets/d07690d0196b44727fa4.ttf) format("truetype"), url(assets/a883108002cd793e8e83.svg#Bitter) format("svg"); /* Legacy iOS */
 }
+/* luckiest-guy-regular - latin */
+@font-face {
+  font-family: "Luckiest Guy";
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/416f7e22c76c7f9fc533.eot); /* IE9 Compat Modes */
+  src: local(""), url(assets/416f7e22c76c7f9fc533.eot?#iefix) format("embedded-opentype"), url(assets/863b32af5495122d229c.woff2) format("woff2"), url(assets/cabb4cf57cc1700c4d86.woff) format("woff"), url(assets/f02933feea9e511dcb40.ttf) format("truetype"), url(assets/f90eb2c56cd87f9afd66.svg#LuckiestGuy) format("svg"); /* Legacy iOS */
+}
 body {
   font-family: "Bitter", Georgia, "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Luckiest Guy", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 hero {
   display: block;
   position: relative;
-  height: 100vh;
   width: 100vw;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2B6869), to(#D2CFCE));
   background-image: linear-gradient(#2B6869, #D2CFCE);
