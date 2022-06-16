@@ -565,8 +565,8 @@ video {
 .z-10 {
   z-index: 10;
 }
-.mt-8 {
-  margin-top: 2rem;
+.mt-12 {
+  margin-top: 3rem;
 }
 .grid {
   display: grid;
@@ -574,13 +574,15 @@ video {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.bg-black {
+.bg-brand-black {
   --tw-bg-opacity: 1;
-  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  background-color: rgba(24, 22, 24, var(--tw-bg-opacity));
 }
-.py-12 {
-  padding-top: 3rem;
+.pb-12 {
   padding-bottom: 3rem;
+}
+.pb-24 {
+  padding-bottom: 6rem;
 }
 .text-6xl {
   font-size: 3.75rem;
@@ -654,7 +656,6 @@ h6 {
 hero {
   display: block;
   position: relative;
-  width: 100vw;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2B6869), to(#D2CFCE));
   background-image: linear-gradient(#2B6869, #D2CFCE);
 }
@@ -684,6 +685,15 @@ hero {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+@media (min-width: 1536px) {
+  .hero-squabs {
+    bottom: 102px;
+  }
+}
+
+section#park {
+  margin-top: 247px;
 }
 
 /*# sourceMappingURL=main.css.map*/
