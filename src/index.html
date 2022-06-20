@@ -8,6 +8,15 @@
   </head>
   <body>
     <hero>
+      <!-- Navbar -->
+      <navbar>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </navbar>
+
       <img
         class="hero-background invisible"
         src="<%=require('./assets/images/hero-buildings.png')%>"
@@ -62,7 +71,7 @@
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
 
-        squabsLogo.style.top = value * 0.050 + "%";
+        squabsLogo.style.top = value * 0.05 + "%";
         foreground.style.top = value * 1 + "px";
         // bird2.style.top = value * -1.5 + "px";
         // bird2.style.left = value * 2 + "px";
