@@ -43,13 +43,13 @@
     </hero>
 
     <!-- The Park -->
-    <section class="pb-24 z-10 bg-brand-black" id="park">
+    <section class="py-32 z-10 bg-brand-black" id="park">
       <div class="container">
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-4">
           <div>
             <h1 class="text-white text-6xl">The Park</h1>
             <div class="mt-12">
-              <p class="text-white">
+              <p class="text-white text-lg">
                 The PARK will become operational once the presale preiod is
                 over. It contains a canvas accessible only to wallets containing
                 at least one SQUAB. Like any good park, this is the place at
@@ -60,27 +60,34 @@
               </p>
             </div>
           </div>
-          <div></div>
+          <div class="relative">
+            <img
+              class="absolute canvas"
+              src="<%=require('./assets/images/canvas.png')%>"
+              alt="Canvas"
+            />
+          </div>
         </div>
       </div>
     </section>
     <script>
       let squabsLogo = document.querySelector(".hero-logo");
       let foreground = document.querySelector(".hero-background");
+      let canvas = document.querySelector(".canvas");
 
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
 
         squabsLogo.style.top = value * 0.05 + "%";
         foreground.style.top = value * 1 + "px";
-        // bird2.style.top = value * -1.5 + "px";
-        // bird2.style.left = value * 2 + "px";
-        // bird1.style.top = value * -1.5 + "px";
-        // bird1.style.left = value * -5 + "px";
-        // btn.style.marginTop = value * 1.5 + "px";
-        // rocks.style.top = value * -0.12 + "px";
-        // forest.style.top = value * 0.25 + "px";
-        // header.style.top = value * 0.5 + "px";
+
+        console.log(canvas.style.left);
+
+        let canvasLeft = canvas.style.left.substring(0, canvas.style.left.length - 2);
+
+        console.log(canvasLeft);
+
+        canvas.style.left = value  - 10 + "px";
       });
     </script>
   </body>

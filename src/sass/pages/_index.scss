@@ -32,16 +32,18 @@ hero {
 .hero-squabs {
   z-index: 5;
   position: absolute;
-  bottom: -186px;
-  width: 900px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  // width: 900px;
+  // left: 50%;
+  // transform: translateX(-50%);
 
-  @screen 2xl {
-    bottom: 102px;
-  }
+  // @screen 2xl {
+  //   bottom: 102px;
+  // }
 }
 
-section#park {
-  margin-top: 247px;
+
+.canvas{
+  left: 611px;
 }
+
