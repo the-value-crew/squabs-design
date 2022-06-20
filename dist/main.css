@@ -577,30 +577,72 @@ video {
 .mt-12 {
   margin-top: 3rem;
 }
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .grid {
   display: grid;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .gap-4 {
   gap: 1rem;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
 .bg-brand-black {
   --tw-bg-opacity: 1;
   background-color: rgba(24, 22, 24, var(--tw-bg-opacity));
 }
+.bg-opacity-25 {
+  --tw-bg-opacity: 0.25;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+.pt-8 {
+  padding-top: 2rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.font-medium {
+  font-weight: 500;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -612,7 +654,7 @@ video {
   font-style: normal;
   font-weight: 400;
   src: url(assets/bf818062e512c57b875c.eot); /* IE9 Compat Modes */
-  src: local(""), url(assets/bf818062e512c57b875c.eot?#iefix) format("embedded-opentype"), url(assets/c82dc7d3d54199942751.woff2) format("woff2"), url(assets/b51c6d3f780575fe330d.woff) format("woff"), url(assets/b5c3187e53289892ed09.ttf) format("truetype"), url(assets/19b04264cf3ae2932cfc.svg#Bitter) format("svg"); /* Legacy iOS */
+  src: local(""), url(assets/bf818062e512c57b875c.eot?#iefix) format("embedded-opentype"), url(assets/c82dc7d3d54199942751.woff2) format("woff2"), url(assets/b51c6d3f780575fe330d.woff) format("woff"), url(assets/b5c3187e53289892ed09.ttf) format("truetype"), url(assets/c852ed1a408104c38af0.svg#Bitter) format("svg"); /* Legacy iOS */
 }
 /* bitter-500 - latin */
 @font-face {
@@ -620,7 +662,7 @@ video {
   font-style: normal;
   font-weight: 500;
   src: url(assets/874c63c9670abe8e975c.eot); /* IE9 Compat Modes */
-  src: local(""), url(assets/874c63c9670abe8e975c.eot?#iefix) format("embedded-opentype"), url(assets/ee5675fbbe6334b380a9.woff2) format("woff2"), url(assets/76f2e46bbf56c009a986.woff) format("woff"), url(assets/0360b67b4970cef0af29.ttf) format("truetype"), url(assets/89f44f64cdf2bf108b40.svg#Bitter) format("svg"); /* Legacy iOS */
+  src: local(""), url(assets/874c63c9670abe8e975c.eot?#iefix) format("embedded-opentype"), url(assets/ee5675fbbe6334b380a9.woff2) format("woff2"), url(assets/76f2e46bbf56c009a986.woff) format("woff"), url(assets/0360b67b4970cef0af29.ttf) format("truetype"), url(assets/925a9be54c51c55c71da.svg#Bitter) format("svg"); /* Legacy iOS */
 }
 /* bitter-900 - latin */
 @font-face {
@@ -628,7 +670,7 @@ video {
   font-style: normal;
   font-weight: 900;
   src: url(assets/4a2c20738c2dbd354765.eot); /* IE9 Compat Modes */
-  src: local(""), url(assets/4a2c20738c2dbd354765.eot?#iefix) format("embedded-opentype"), url(assets/feee19f7e831dcc6781f.woff2) format("woff2"), url(assets/6b5418d696ac0f95aa67.woff) format("woff"), url(assets/46e1fffd96ed1013debb.ttf) format("truetype"), url(assets/59134fa4476f0548a078.svg#Bitter) format("svg"); /* Legacy iOS */
+  src: local(""), url(assets/4a2c20738c2dbd354765.eot?#iefix) format("embedded-opentype"), url(assets/feee19f7e831dcc6781f.woff2) format("woff2"), url(assets/6b5418d696ac0f95aa67.woff) format("woff"), url(assets/46e1fffd96ed1013debb.ttf) format("truetype"), url(assets/12d88216ea8d4fd48d3b.svg#Bitter) format("svg"); /* Legacy iOS */
 }
 /* bitter-italic - latin */
 @font-face {
@@ -636,7 +678,7 @@ video {
   font-style: italic;
   font-weight: 400;
   src: url(assets/a61dc3dfc9449fad200c.eot); /* IE9 Compat Modes */
-  src: local(""), url(assets/a61dc3dfc9449fad200c.eot?#iefix) format("embedded-opentype"), url(assets/d9ce24164447501424e4.woff2) format("woff2"), url(assets/9e620aabb12e971a4cdf.woff) format("woff"), url(assets/c77330932538a3d3a030.ttf) format("truetype"), url(assets/4d44bebcc8b95c6210c7.svg#Bitter) format("svg"); /* Legacy iOS */
+  src: local(""), url(assets/a61dc3dfc9449fad200c.eot?#iefix) format("embedded-opentype"), url(assets/d9ce24164447501424e4.woff2) format("woff2"), url(assets/9e620aabb12e971a4cdf.woff) format("woff"), url(assets/c77330932538a3d3a030.ttf) format("truetype"), url(assets/6a0e0c2de3a64abac4ab.svg#Bitter) format("svg"); /* Legacy iOS */
 }
 /* bitter-900italic - latin */
 @font-face {
@@ -644,7 +686,7 @@ video {
   font-style: italic;
   font-weight: 900;
   src: url(assets/4ce640c2d7d45a0f2442.eot); /* IE9 Compat Modes */
-  src: local(""), url(assets/4ce640c2d7d45a0f2442.eot?#iefix) format("embedded-opentype"), url(assets/cd46f440902bc2c2f0d6.woff2) format("woff2"), url(assets/8207b45f4afe3c366f49.woff) format("woff"), url(assets/d07690d0196b44727fa4.ttf) format("truetype"), url(assets/89dec65b5952231a3152.svg#Bitter) format("svg"); /* Legacy iOS */
+  src: local(""), url(assets/4ce640c2d7d45a0f2442.eot?#iefix) format("embedded-opentype"), url(assets/cd46f440902bc2c2f0d6.woff2) format("woff2"), url(assets/8207b45f4afe3c366f49.woff) format("woff"), url(assets/d07690d0196b44727fa4.ttf) format("truetype"), url(assets/a883108002cd793e8e83.svg#Bitter) format("svg"); /* Legacy iOS */
 }
 /* luckiest-guy-regular - latin */
 @font-face {
@@ -652,7 +694,7 @@ video {
   font-style: normal;
   font-weight: 400;
   src: url(assets/416f7e22c76c7f9fc533.eot); /* IE9 Compat Modes */
-  src: local(""), url(assets/416f7e22c76c7f9fc533.eot?#iefix) format("embedded-opentype"), url(assets/863b32af5495122d229c.woff2) format("woff2"), url(assets/cabb4cf57cc1700c4d86.woff) format("woff"), url(assets/f02933feea9e511dcb40.ttf) format("truetype"), url(assets/04f8f6b5bfbb66f263f9.svg#LuckiestGuy) format("svg"); /* Legacy iOS */
+  src: local(""), url(assets/416f7e22c76c7f9fc533.eot?#iefix) format("embedded-opentype"), url(assets/863b32af5495122d229c.woff2) format("woff2"), url(assets/cabb4cf57cc1700c4d86.woff) format("woff"), url(assets/f02933feea9e511dcb40.ttf) format("truetype"), url(assets/f90eb2c56cd87f9afd66.svg#LuckiestGuy) format("svg"); /* Legacy iOS */
 }
 body {
   font-family: "Bitter", Georgia, "Times New Roman", Times, serif;
@@ -679,12 +721,8 @@ hero {
   background-size: cover;
 }
 
-.hero-background {
-  z-index: 1;
-}
-
 .hero-logo {
-  z-index: 2;
+  z-index: 0;
   position: absolute;
   top: 0;
 }
@@ -704,6 +742,10 @@ hero {
 
 .canvas {
   left: 611px;
+}
+
+#park {
+  z-index: 1;
 }
 
 /*# sourceMappingURL=main.css.map*/

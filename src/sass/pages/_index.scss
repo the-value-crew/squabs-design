@@ -12,12 +12,9 @@ hero {
   background-size: cover;
 }
 
-.hero-background {
-  z-index: 1;
-}
 
 .hero-logo {
-  z-index: 2;
+  z-index: 0;
   position: absolute;
   top: 0;
 }
@@ -47,3 +44,6 @@ hero {
   left: 611px;
 }
 
+#park{
+  z-index: 1;
+}

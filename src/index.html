@@ -10,11 +10,27 @@
     <hero>
       <!-- Navbar -->
       <navbar>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="container">
+          <ul class="pt-8 flex items-center justify-between">
+            <li><a class="cursor-pointer text-lg font-medium" href="index.html">Home</a></li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="index.html">The Park</a>
+            </li>
+            <li>
+              <div class="bg-black bg-opacity-25 py-2 px-4 rounded-full">
+                <a class="cursor-pointer text-lg text-white font-medium" href="about.html"
+                  >About Squabs</a
+                >
+              </div>
+            </li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="index.html">Buy a Merch</a>
+            </li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="contact.html">Buy a Squab</a>
+            </li>
+          </ul>
+        </div>
       </navbar>
 
       <img
@@ -60,13 +76,13 @@
               </p>
             </div>
           </div>
-          <div class="relative">
+          <!-- <div class="relative">
             <img
               class="absolute canvas"
               src="<%=require('./assets/images/canvas.png')%>"
               alt="Canvas"
             />
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -83,11 +99,14 @@
 
         console.log(canvas.style.left);
 
-        let canvasLeft = canvas.style.left.substring(0, canvas.style.left.length - 2);
+        let canvasLeft = canvas.style.left.substring(
+          0,
+          canvas.style.left.length - 2
+        );
 
         console.log(canvasLeft);
 
-        canvas.style.left = value  - 10 + "px";
+        canvas.style.left = value - 10 + "px";
       });
     </script>
   </body>
