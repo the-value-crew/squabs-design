@@ -15,7 +15,16 @@ module.exports = {
     },
     colors: ({ colors }) => ({
       brand: {
-        black: '#181618'
+        black: '#181618',
+        gray: {
+          dark: '#0F1825',
+          light: '#D9D9D9'
+        },
+        green: '#0E9E49',
+        yellow: '#FFCE3D',
+      },
+      text: {
+        black: '#0F1825'
       },
       inherit: colors.inherit,
       current: colors.current,

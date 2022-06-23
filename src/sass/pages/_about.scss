@@ -1,0 +1,54 @@
+.problems-about-connector {
+  height: 70%;
+  top: 74px;
+  position: absolute;
+  left: 18px;
+  z-index: -1;
+}
+
+.solutions-about-connector {
+  height: 70%;
+  top: 88px;
+  position: absolute;
+  left: 18px;
+  z-index: -1;
+}
+
+.squabs-background {
+  transform: rotate(4.36deg);
+  border-radius: 60px;
+  border: 6px solid white;
+}
+
+.squabs-background:hover {
+  @apply bg-[#CCF5E1];
+  border: 0;
+}
+
+.squab-detail{
+    padding-top: 180px;
+}
+
+.squab-detail:hover {
+  .squabs-background {
+    @apply bg-[#CCF5E1];
+    border: 0;
+  }
+}
+
+.our-audience{
+    background-image: url('../assets/images/slanted-bg-white.png');
+    background-size: cover;
+
+    padding-top: 393px;
+    padding-bottom: 393px;
+}
+
+.the-team{
+    background-image: url('../assets/images/slanted-bg-green.png');
+    background-size: cover;
+
+    padding-top: 393px;
+    padding-bottom: 393px;
+
+}
