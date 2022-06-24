@@ -14,7 +14,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, "dist"),
-    assetModuleFilename: "assets/[hash][ext][query]",
+    assetModuleFilename: "assets/[name][ext][query]",
   },
 
   module: {
@@ -48,6 +48,18 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ],
+        exclude: path.resolve(__dirname, 'src/index.html')
+      }
     ],
   },
 
@@ -55,8 +67,13 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
       template: "./src/about.html",
       filename: "about.html",
+      chunks: []
     }),
   ],
 

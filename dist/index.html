@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Squabs</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <hero id="home">
+      <!-- Navbar -->
+      <navbar>
+        <div class="container">
+          <ul class="pt-8 flex items-center justify-between">
+            <li><a class="cursor-pointer text-lg font-medium" href="index.html">Home</a></li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="index.html">The Park</a>
+            </li>
+            <li>
+              <div class="bg-black bg-opacity-25 py-2 px-4 rounded-full">
+                <a class="cursor-pointer text-lg text-white font-medium" href="./about.html"
+                  >About Squabs</a
+                >
+              </div>
+            </li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="index.html">Buy a Merch</a>
+            </li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="contact.html">Buy a Squab</a>
+            </li>
+          </ul>
+        </div>
+      </navbar>
+
+      <img
+        class="hero-background invisible"
+        src="assets/hero-buildings.png"
+        alt="NYC Buildings"
+      />
+
+      <img
+        class="hero-logo"
+        src="assets/squabs-nyc.png"
+        alt="Squabs"
+      />
+
+      <img
+        class="hero-foreground"
+        src="assets/hero-foreground.png"
+        alt="Foreground"
+      />
+
+      <img
+        class="hero-squabs"
+        src="assets/hero-birds.png"
+        alt="Squabs"
+      />
+    </hero>
+
+    <!-- The Park -->
+    <section class="py-32 z-10 bg-brand-black" id="park">
+      <div class="container">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <h1 class="text-white text-6xl">The Park</h1>
+            <div class="mt-12">
+              <p class="text-white text-lg">
+                The PARK will become operational once the presale preiod is
+                over. It contains a canvas accessible only to wallets containing
+                at least one SQUAB. Like any good park, this is the place at
+                drawsrawl, or write expletives Each NFT-holder will be able to
+                paint a pixel on the wall every fifteen minustes. Think of it as
+                a collaborative art experiment for the cryptoshphere. A
+                members-only canvas for the discerning minds of crypto twitter.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="relative">
+            <img
+              class="absolute canvas"
+              src="assets/canvas.png"
+              alt="Canvas"
+            />
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <script>
+      let squabsLogo = document.querySelector(".hero-logo");
+      let foreground = document.querySelector(".hero-background");
+      let canvas = document.querySelector(".canvas");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        squabsLogo.style.top = value * 0.05 + "%";
+        foreground.style.top = value * 1 + "px";
+
+        console.log(canvas.style.left);
+
+        let canvasLeft = canvas.style.left.substring(
+          0,
+          canvas.style.left.length - 2
+        );
+
+        console.log(canvasLeft);
+
+        canvas.style.left = value - 10 + "px";
+      });
+    </script>
+  </body>
+</html>
