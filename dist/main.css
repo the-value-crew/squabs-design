@@ -585,6 +585,10 @@ video {
   margin-top: 11rem;
   margin-bottom: 11rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mt-12 {
   margin-top: 3rem;
 }
@@ -602,6 +606,12 @@ video {
 }
 .mt-2 {
   margin-top: 0.5rem;
+}
+.ml-\[-30px\] {
+  margin-left: -30px;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .flex {
   display: -webkit-box;
@@ -623,6 +633,12 @@ video {
 .h-56 {
   height: 14rem;
 }
+.h-32 {
+  height: 8rem;
+}
+.h-44 {
+  height: 11rem;
+}
 .w-1\/2 {
   width: 50%;
 }
@@ -637,6 +653,36 @@ video {
 }
 .w-56 {
   width: 14rem;
+}
+.w-3\/12 {
+  width: 25%;
+}
+.w-8\/12 {
+  width: 66.666667%;
+}
+.w-9\/12 {
+  width: 75%;
+}
+.w-10\/12 {
+  width: 83.333333%;
+}
+.w-2\/12 {
+  width: 16.666667%;
+}
+.w-7\/12 {
+  width: 58.333333%;
+}
+.w-32 {
+  width: 8rem;
+}
+.w-44 {
+  width: 11rem;
+}
+.w-11\/12 {
+  width: 91.666667%;
+}
+.w-1\/12 {
+  width: 8.333333%;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -697,8 +743,16 @@ video {
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .rounded-full {
   border-radius: 9999px;
+}
+.border-4 {
+  border-width: 4px;
 }
 .bg-brand-gray-dark {
   --tw-bg-opacity: 1;
@@ -724,10 +778,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 243, 208, var(--tw-bg-opacity));
 }
-.bg-brand-gray-light {
-  --tw-bg-opacity: 1;
-  background-color: rgba(217, 217, 217, var(--tw-bg-opacity));
-}
 .bg-brand-black {
   --tw-bg-opacity: 1;
   background-color: rgba(24, 22, 24, var(--tw-bg-opacity));
@@ -743,12 +793,23 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .py-60 {
   padding-top: 15rem;
   padding-bottom: 15rem;
 }
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 .pt-8 {
   padding-top: 2rem;
+}
+.pb-12 {
+  padding-bottom: 3rem;
 }
 .pb-44 {
   padding-bottom: 11rem;
@@ -1298,6 +1359,31 @@ h6 {
   font-family: "Luckiest Guy", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#nft-body {
+  height: 100vh;
+  margin-top: 30px;
+}
+
+.coming-soon-page-message {
+  position: absolute;
+  top: 90px;
+  padding-top: 90px;
+  width: 100%;
+}
+
+#ecom-body {
+  background-image: url(assets/506e42ab3a7ee6539e12.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 hero#home {
   display: block;
   position: relative;
@@ -1390,16 +1476,12 @@ hero#home {
   padding-bottom: 393px;
 }
 
-#nft-body {
-  background-image: url(assets/9fb8ef0051faff5e1b88.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
+.problems {
+  background-image: url(assets/d2d48e53b7e57df370ea.png);
 }
 
-.coming-soon-page-message {
-  padding-top: 90px;
+.solutions {
+  background-image: url(assets/c68ae5b292da6f646969.png);
 }
 
 /*# sourceMappingURL=main.css.map*/
