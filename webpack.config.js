@@ -14,7 +14,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, "dist"),
-    assetModuleFilename: "assets/[name][ext][query]",
+    assetModuleFilename: "assets/[hash][ext][query]",
   },
 
   module: {
@@ -48,18 +48,18 @@ module.exports = {
           loader: "babel-loader",
         },
       },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]'
-            }
-          }
-        ],
-        exclude: path.resolve(__dirname, 'src/index.html')
-      }
+      // {
+      //   test: /\.html$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: '[name].[ext]'
+      //       }
+      //     }
+      //   ],
+      //   exclude: path.resolve(__dirname, 'src/index.html')
+      // }
     ],
   },
 
@@ -71,9 +71,8 @@ module.exports = {
     //   filename: "index.html",
     // }),
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      filename: "index.html",
-      chunks: []
+      template: "./src/nft.html",
+      filename: "nft.html",
     }),
   ],
 
