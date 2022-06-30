@@ -4,30 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
     <title>Squabs</title>
-  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  </head>
   <body>
     <hero id="home">
       <!-- Navbar -->
       <navbar>
         <div class="container">
           <ul class="pt-8 flex items-center justify-between">
-            <li><a class="cursor-pointer text-lg font-medium" href="index.html">Home</a></li>
             <li>
-              <a class="cursor-pointer text-lg font-medium" href="index.html">The Park</a>
+              <a class="cursor-pointer text-lg font-medium" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="index.html"
+                >The Park</a
+              >
             </li>
             <li>
               <div class="bg-black bg-opacity-25 py-2 px-4 rounded-full">
-                <a class="cursor-pointer text-lg text-white font-medium" href="./about.html"
+                <a
+                  class="cursor-pointer text-lg text-white font-medium"
+                  href="./about.html"
                   >About Squabs</a
                 >
               </div>
             </li>
             <li>
-              <a class="cursor-pointer text-lg font-medium" href="index.html">Buy a Merch</a>
+              <a class="cursor-pointer text-lg font-medium" href="index.html"
+                >Buy a Merch</a
+              >
             </li>
             <li>
-              <a class="cursor-pointer text-lg font-medium" href="contact.html">Buy a Squab</a>
+              <a class="cursor-pointer text-lg font-medium" href="contact.html"
+                >Buy a Squab</a
+              >
             </li>
           </ul>
         </div>
@@ -59,7 +72,7 @@
     </hero>
 
     <!-- The Park -->
-    <section class="py-32 z-10 bg-brand-black" id="park">
+    <section class="py-60 z-10 bg-brand-black" id="park">
       <div class="container">
         <div class="grid grid-cols-2 gap-4">
           <div>
@@ -76,13 +89,13 @@
               </p>
             </div>
           </div>
-          <!-- <div class="relative">
+          <div class="relative">
             <img
               class="absolute canvas"
               src="assets/canvas.png"
               alt="Canvas"
             />
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
@@ -91,22 +104,38 @@
       let foreground = document.querySelector(".hero-background");
       let canvas = document.querySelector(".canvas");
 
+      let initialCanvasLeft = canvas.offsetLeft;
+
+      let oldValue = 0;
+      let newValue = 0;
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
 
-        squabsLogo.style.top = value * 0.05 + "%";
+        if (value * 0.05 <= 40) {
+          squabsLogo.style.top = value * 0.05 + "%";
+        }
         foreground.style.top = value * 1 + "px";
 
-        console.log(canvas.style.left);
+        let canvasLeft = canvas.offsetLeft;
 
-        let canvasLeft = canvas.style.left.substring(
-          0,
-          canvas.style.left.length - 2
-        );
+        newValue = window.pageYOffset;
+        if (oldValue < newValue) {
+          if (canvasLeft >= 0) {
+            canvas.style.left = canvasLeft - 10 + "px";
+          }
 
-        console.log(canvasLeft);
+          console.log("Down");
+        } else if (oldValue > newValue) {
+          if (canvasLeft <= initialCanvasLeft) {
+            canvas.style.left = canvasLeft + 30 + "px";
+          }
 
-        canvas.style.left = value - 10 + "px";
+          console.log("Up");
+        }
+        oldValue = newValue;
+
+        console.log("Top: " + oldValue);
+        console.log("Current" + canvasLeft);
       });
     </script>
   </body>
