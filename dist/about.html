@@ -73,8 +73,8 @@
     <!-- Problems -->
     <section class="problems pb-12 my-24">
       <div class="container text-white">
-        <div class="flex items-center space-x-4">
-          <div class="w-1/2">
+        <div class="md:flex items-center space-x-4">
+          <div class="md:w-1/2">
             <div class="mt-12">
               <div class="relative flex flex-col space-y-16">
                 <div
@@ -132,7 +132,7 @@
               </div>
             </div>
           </div>
-          <div class="w-1/2">
+          <div class="md:w-1/2">
             <img
               class="hero-background"
               src="assets/63f316f2c3c4588a85b8.png"
@@ -146,15 +146,15 @@
     <!-- Solutions -->
     <section class="solutions my-24">
       <div class="container text-white">
-        <div class="flex items-center space-x-4">
-          <div class="w-1/2">
+        <div class="md:flex items-center space-x-4">
+          <div class="md:w-1/2">
             <img
               class="hero-background"
               src="assets/b86fe3b21daf5d8ec43e.png"
               alt="Problems"
             />
           </div>
-          <div class="w-1/2">
+          <div class="md:w-1/2">
             <div class="mt-12">
               <div class="relative flex flex-col space-y-16">
                 <div
@@ -238,7 +238,7 @@
       <!-- Squabs -->
       <div class="splide" id="squabs-slider">
         <div class="splide__track">
-          <ul class="splide__list grid grid-cols-3 gap-4">
+          <ul class="splide__list lg:grid lg:grid-cols-3 gap-4">
             <li class="splide__splide">
               <div>
                 <div class="squab-detail relative">
@@ -343,12 +343,12 @@
     </section>
 
     <!-- Our Goal -->
-    <section class="mt-44 w-7/12 flex items-center mx-auto text-white">
-      <div class="w-3/12">
+    <section class="mt-44 w-7/12 md:flex items-center mx-auto text-white">
+      <div class="md:w-3/12">
         <img src="assets/4d87d9ec71f2e63e7275.png"
         alt="Fyle">
       </div>
-      <div class="w-9/12 flex items-center">
+      <div class="md:w-9/12 md:flex items-center">
         <div>
           <div
             class="rounded-full flex items-center justify-center w-44 h-44 border-4"
@@ -392,7 +392,7 @@
     </section>
 
     <!-- The Team -->
-    <section class="the-team">
+    <!-- <section class="the-team">
       <div>
         <div>
           <h1 class="text-center text-brand-green text-5xl">The Team</h1>
@@ -502,7 +502,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
 
@@ -517,7 +517,7 @@
 
         new Splide("#squabs-slider", {
           type: "loop",
-          perPage: 3,
+          perPage: 1,
           arrows: false,
           pagination: false,
         }).mount();

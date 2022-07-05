@@ -601,17 +601,14 @@ video {
 .mt-44 {
   margin-top: 11rem;
 }
+.ml-\[-30px\] {
+  margin-left: -30px;
+}
 .mt-16 {
   margin-top: 4rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
-}
-.ml-\[-30px\] {
-  margin-left: -30px;
-}
-.mt-6 {
-  margin-top: 1.5rem;
 }
 .flex {
   display: -webkit-box;
@@ -630,17 +627,8 @@ video {
 .h-\[330px\] {
   height: 330px;
 }
-.h-56 {
-  height: 14rem;
-}
-.h-32 {
-  height: 8rem;
-}
 .h-44 {
   height: 11rem;
-}
-.w-1\/2 {
-  width: 50%;
 }
 .w-1 {
   width: 0.25rem;
@@ -651,47 +639,23 @@ video {
 .w-full {
   width: 100%;
 }
-.w-56 {
-  width: 14rem;
+.w-7\/12 {
+  width: 58.333333%;
 }
 .w-3\/12 {
   width: 25%;
 }
-.w-8\/12 {
-  width: 66.666667%;
-}
 .w-9\/12 {
   width: 75%;
 }
-.w-10\/12 {
-  width: 83.333333%;
-}
-.w-2\/12 {
-  width: 16.666667%;
-}
-.w-7\/12 {
-  width: 58.333333%;
-}
-.w-32 {
-  width: 8rem;
-}
 .w-44 {
   width: 11rem;
-}
-.w-11\/12 {
-  width: 91.666667%;
-}
-.w-1\/12 {
-  width: 8.333333%;
 }
 .cursor-pointer {
   cursor: pointer;
 }
 .list-disc {
   list-style-type: disc;
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -737,11 +701,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.75rem * var(--tw-space-x-reverse));
   margin-left: calc(2.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -800,10 +759,6 @@ video {
 .py-60 {
   padding-top: 15rem;
   padding-bottom: 15rem;
-}
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -1482,6 +1437,38 @@ hero#home {
 
 .solutions {
   background-image: url(assets/c68ae5b292da6f646969.png);
+}
+
+@media (min-width: 768px) {
+
+  .md\:flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-3\/12 {
+    width: 25%;
+  }
+
+  .md\:w-9\/12 {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 /*# sourceMappingURL=main.css.map*/
