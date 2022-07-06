@@ -13,12 +13,16 @@
       <div class="container">
         <ul class="py-4 flex items-center justify-between">
           <li>
-            <a class="cursor-pointer text-white text-lg font-medium" href="index.html"
+            <a
+              class="cursor-pointer text-white text-lg font-medium"
+              href="index.html"
               >Home</a
             >
           </li>
           <li>
-            <a class="cursor-pointer text-white text-lg font-medium" href="index.html"
+            <a
+              class="cursor-pointer text-white text-lg font-medium"
+              href="index.html"
               >The Park</a
             >
           </li>
@@ -32,12 +36,16 @@
             </div>
           </li>
           <li>
-            <a class="cursor-pointer text-white text-lg font-medium" href="index.html"
+            <a
+              class="cursor-pointer text-white text-lg font-medium"
+              href="index.html"
               >Buy a Merch</a
             >
           </li>
           <li>
-            <a class="cursor-pointer text-white text-lg font-medium" href="contact.html"
+            <a
+              class="cursor-pointer text-white text-lg font-medium"
+              href="contact.html"
               >Buy a Squab</a
             >
           </li>
@@ -49,7 +57,16 @@
       <img
         src="<%=require('./assets/images/squabs-nft-merch.png')%>"
         alt="Coming Soon"
+        id="ecomMerchImage"
       />
     </div>
+
+    <script>
+      let image = document.getElementById("ecomMerchImage");
+
+      if (screen.width < 676) {
+        image.src = "<%=require('./assets/images/squabs-merch-min.png')%>";
+      }
+    </script>
   </body>
 </html>

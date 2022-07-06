@@ -52,14 +52,21 @@
         </ul>
       </div>
     </nav>
-    <div id="nft-body">
-      <div class="coming-soon-page-message text-[#EED878]">
-            <marquee class="text-xl">Coming Soon...</marquee>
-        </div>
+
+    <div id="ecom-body">
       <img
-        src="assets/15fd6642e458bcd3c84b.png"
+        src="assets/d52a41dc478454130ebf.png"
         alt="Coming Soon"
+        id="ecomMerchImage"
       />
     </div>
+
+    <script>
+      let image = document.getElementById("ecomMerchImage");
+
+      if (screen.width < 676) {
+        image.src = "assets/9ae8bb89bb1100859b09.png";
+      }
+    </script>
   </body>
 </html>

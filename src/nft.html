@@ -54,12 +54,21 @@
     </nav>
     <div id="nft-body">
       <div class="coming-soon-page-message text-[#EED878]">
-            <marquee class="text-xl">Coming Soon...</marquee>
-        </div>
+        <marquee class="text-xl">Coming Soon...</marquee>
+      </div>
       <img
+        id="nft-image"
         src="<%=require('./assets/images/squabs-nft-bg.png')%>"
         alt="Coming Soon"
       />
     </div>
   </body>
+
+  <script>
+    let image = document.getElementById("nft-image");
+
+    if (screen.width < 676) {
+      image.src = "<%=require('./assets/images/nft-bg-mobile.png')%>";
+    }
+  </script>
 </html>
