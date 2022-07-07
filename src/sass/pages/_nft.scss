@@ -1,8 +1,15 @@
-
-
 .coming-soon-page-message {
   position: absolute;
-  top: 90px;
+  top: 143px;
   padding-top: 90px;
-  width: 100%;
+  width: 84%;
+  left: 58%;
+  transform: translateX(-50%);
+  text-shadow: 2px 2px #ff0000;
+
+  @screen md {
+    top: 90px;
+    width: 33%;
+    left: 47%;
+  }
 }

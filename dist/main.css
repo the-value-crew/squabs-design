@@ -784,13 +784,13 @@ video {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 .py-60 {
   padding-top: 15rem;
   padding-bottom: 15rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -1386,9 +1386,20 @@ h6 {
 
 .coming-soon-page-message {
   position: absolute;
-  top: 90px;
+  top: 143px;
   padding-top: 90px;
-  width: 100%;
+  width: 84%;
+  left: 58%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-shadow: 2px 2px #ff0000;
+}
+@media (min-width: 768px) {
+  .coming-soon-page-message {
+    top: 90px;
+    width: 33%;
+    left: 47%;
+  }
 }
 
 #ecom-body {
