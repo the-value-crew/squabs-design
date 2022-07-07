@@ -55,6 +55,8 @@
           </ul>
         </div>
       </navbar>
+
+      
       <!-- Mobile Navbar Button -->
       <div class="block md:hidden absolute right-0">
         <button class="open-navbar ">
@@ -62,16 +64,7 @@
         </button>
       </div>
 
-      <!-- Hero content -->
-      <div class="flex justify-center items-center">
-      <picture>
-        <source media="(min-width: 640px)" srcset="<%=require('./assets/images/about-hero.png')%>">
-        <img src="<%=require('./assets/images/about-hero-mobile.png')%>" alt="Squabs" />
-      </picture>
-    </div>
-    </hero>
-
-    <!-- Mobile Navbar -->
+      <!-- Mobile Navbar -->
     <section id="mobile-navbar" class="hidden">
       <div class="z-40 top-0 w-screen h-screen backdrop-blur-sm fixed">
 
@@ -98,6 +91,17 @@
         </nav>
       </div>
     </section>
+
+      <!-- Hero content -->
+      <div class="flex justify-center items-center">
+      <picture>
+        <source media="(min-width: 640px)" srcset="<%=require('./assets/images/about-hero.png')%>">
+        <img src="<%=require('./assets/images/about-hero-mobile.png')%>" alt="Squabs" />
+      </picture>
+    </div>
+    </hero>
+
+    
 
     <!-- Small Intro -->
     <section class="mt-12 container text-white text-lg text-center">
@@ -356,7 +360,7 @@
     </section>
 
     <!-- Our Audience -->
-    <section class="py-24 md:py-0 pb-44 our-audience">
+    <section class="py-24 pb-44 our-audience">
       <div class="relative container">
         <h1 class="text-5xl text-brand-green">Our Audience</h1>
         <div class="mt-8">
@@ -602,20 +606,6 @@
     </script>
 
     <script>
-      let mobileNavbar = document.querySelector('#mobile-navbar');
-      let closeMobileNavbarBtn = document.querySelector('.close-navbar');
-      let openMobileNavbarBtn = document.querySelector('.open-navbar');
-
-      let showMobileNavbar = () => {
-        mobileNavbar.classList.remove("hidden");
-      };
-
-      let hideMobileNavbar = () => {
-        mobileNavbar.classList.add("hidden");
-      };
-
-      closeMobileNavbarBtn.addEventListener("click", hideMobileNavbar);
-      openMobileNavbarBtn.addEventListener("click", showMobileNavbar);
       
     </script>
   </body>

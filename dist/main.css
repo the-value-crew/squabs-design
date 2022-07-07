@@ -798,8 +798,11 @@ video {
 .pl-20 {
   padding-left: 5rem;
 }
-.pb-12 {
-  padding-bottom: 3rem;
+.pt-24 {
+  padding-top: 6rem;
+}
+.pb-0 {
+  padding-bottom: 0px;
 }
 .pb-44 {
   padding-bottom: 11rem;
@@ -809,12 +812,6 @@ video {
 }
 .pb-24 {
   padding-bottom: 6rem;
-}
-.pt-24 {
-  padding-top: 6rem;
-}
-.pb-0 {
-  padding-bottom: 0px;
 }
 .text-center {
   text-align: center;
@@ -1568,22 +1565,6 @@ hero#home {
   .md\:py-44 {
     padding-top: 11rem;
     padding-bottom: 11rem;
-  }
-
-  .md\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-}
-
-@media (min-width: 1024px) {
-
-  .lg\:grid {
-    display: grid;
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

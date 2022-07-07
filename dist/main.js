@@ -62,7 +62,22 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/main.scss */ "./src/sass/main.scss");
 
-console.log("YOlo");
+console.log("YOlo"); // Navbar
+
+var mobileNavbar = document.querySelector("#mobile-navbar");
+var closeMobileNavbarBtn = document.querySelector(".close-navbar");
+var openMobileNavbarBtn = document.querySelector(".open-navbar");
+
+var showMobileNavbar = function showMobileNavbar() {
+  mobileNavbar.classList.remove("hidden");
+};
+
+var hideMobileNavbar = function hideMobileNavbar() {
+  mobileNavbar.classList.add("hidden");
+};
+
+closeMobileNavbarBtn.addEventListener("click", hideMobileNavbar);
+openMobileNavbarBtn.addEventListener("click", showMobileNavbar);
 }();
 /******/ })()
 ;
