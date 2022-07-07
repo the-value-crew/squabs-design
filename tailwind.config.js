@@ -245,7 +245,9 @@ module.exports = {
       200: '2',
     },
     container: {
-      center: true
+      center: true,
+      padding: '2rem',
+
     },
     content: {
       none: 'none',

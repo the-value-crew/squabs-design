@@ -1,17 +1,25 @@
 .problems-about-connector {
   height: 70%;
-  top: 74px;
+  top: 134px;
   position: absolute;
   left: 18px;
   z-index: -1;
+
+  @screen md {
+    top: 74px;
+  }
 }
 
 .solutions-about-connector {
   height: 70%;
-  top: 88px;
+  top: 172px;
   position: absolute;
   left: 18px;
   z-index: -1;
+
+  @screen md {
+    top: 88px;
+  }
 }
 
 .squabs-background {
@@ -25,8 +33,8 @@
   border: 0;
 }
 
-.squab-detail{
-    padding-top: 180px;
+.squab-detail {
+  padding-top: 180px;
 }
 
 .squab-detail:hover {
@@ -36,27 +44,31 @@
   }
 }
 
-.our-audience{
-    background-image: url('../assets/images/slanted-bg-white.png');
-    background-size: cover;
-
-    padding-top: 393px;
-    padding-bottom: 393px;
+.our-audience {
+  background-image: url("../assets/images/about-audience-bg.png");
+  background-size: cover;
 }
 
-.the-team{
-    background-image: url('../assets/images/slanted-bg-green.png');
-    background-size: cover;
+.the-team {
+  background-image: url("../assets/images/slanted-bg-green.png");
+  background-size: cover;
 
-    padding-top: 393px;
-    padding-bottom: 393px;
-
+  padding-top: 393px;
+  padding-bottom: 393px;
 }
 
-.problems{
-  background-image: url('../assets/images/about-problems-bg.png');
+.problems {
+  background-image: url("../assets/images/about-problems-bg.png");
 }
 
-.solutions{
-  background-image: url('../assets/images/rash-pattern-bg.png');
+.solutions {
+  background-image: url("../assets/images/about-solutions-bg.png");
+}
+
+.who-we-are {
+  background-image: url("../assets/images/about-who-we-are-bg.png");
+}
+
+.goal {
+  background-image: url("../assets/images/about-goal-bg.png");
 }

@@ -58,13 +58,17 @@
       <!-- Mobile Navbar Button -->
       <div class="block md:hidden absolute right-0">
         <button class="open-navbar ">
-          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQiIGhlaWdodD0iNTQiIHZpZXdCb3g9IjAgMCA1NCA1NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuNzUgNDAuNUg0Ny4yNVYzNkg2Ljc1VjQwLjVaTTYuNzUgMjkuMjVINDcuMjVWMjQuNzVINi43NVYyOS4yNVpNNi43NSAxMy41VjE4SDQ3LjI1VjEzLjVINi43NVoiIGZpbGw9IiMwRjE4MjUiLz4KPC9zdmc+Cg==" alt="Open Navbar">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQiIGhlaWdodD0iNTQiIHZpZXdCb3g9IjAgMCA1NCA1NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuNzUgNDAuNUg0Ny4yNVYzNkg2Ljc1VjQwLjVaTTYuNzUgMjkuMjVINDcuMjVWMjQuNzVINi43NVYyOS4yNVpNNi43NSAxMy41VjE4SDQ3LjI1VjEzLjVINi43NVoiIGZpbGw9IiNFNkVBRjAiLz4KPC9zdmc+Cg==" alt="Open Navbar">
         </button>
       </div>
 
       <!-- Hero content -->
-
-      <img src="assets/b93fbf38f29be6d85ece.png" alt="Squabs" />
+      <div class="flex justify-center items-center">
+      <picture>
+        <source media="(min-width: 640px)" srcset="assets/b93fbf38f29be6d85ece.png">
+        <img src="assets/4d077a39c6f3e199f29a.png" alt="Squabs" />
+      </picture>
+    </div>
     </hero>
 
     <!-- Mobile Navbar -->
@@ -107,9 +111,16 @@
     </section>
 
     <!-- Problems -->
-    <section class="problems pb-12 my-24">
+    <section class="problems pt-24 pb-0 md:py-24">
       <div class="container text-white">
         <div class="md:flex items-center space-x-4">
+          <div class="md:hidden">
+            <img
+              class="hero-background"
+              src="assets/63f316f2c3c4588a85b8.png"
+              alt="Problems"
+            />
+          </div>
           <div class="md:w-1/2">
             <div class="mt-12">
               <div class="relative flex flex-col space-y-16">
@@ -168,7 +179,7 @@
               </div>
             </div>
           </div>
-          <div class="md:w-1/2">
+          <div class="hidden md:block md:w-1/2">
             <img
               class="hero-background"
               src="assets/63f316f2c3c4588a85b8.png"
@@ -180,7 +191,7 @@
     </section>
 
     <!-- Solutions -->
-    <section class="solutions my-24">
+    <section class="solutions py-24">
       <div class="container text-white">
         <div class="md:flex items-center space-x-4">
           <div class="md:w-1/2">
@@ -258,7 +269,7 @@
     </section>
 
     <!-- Who we are -->
-    <section class="text-white my-44 who-we-are container">
+    <section class="py-24 md:py-44 text-white who-we-are container">
       <h1 class="text-green text-5xl">Who We Are</h1>
       <div class="text-xl mt-4">
         <p>
@@ -274,7 +285,7 @@
       <!-- Squabs -->
       <div class="splide" id="squabs-slider">
         <div class="splide__track">
-          <ul class="splide__list lg:grid lg:grid-cols-3 gap-4">
+          <ul class="splide__list  gap-4">
             <li class="splide__splide">
               <div>
                 <div class="squab-detail relative">
@@ -345,11 +356,11 @@
     </section>
 
     <!-- Our Audience -->
-    <section class="pb-44 our-audience">
+    <section class="py-24 md:py-0 pb-44 our-audience">
       <div class="relative container">
         <h1 class="text-5xl text-brand-green">Our Audience</h1>
         <div class="mt-8">
-          <ul class="list-disc">
+          <ul class="text-white list-disc">
             <li class="text-xl">Ages 17-27</li>
             <li class="text-xl">
               Young people who dont fit in, and deal with obstacles that seem
@@ -367,7 +378,7 @@
           </ul>
         </div>
 
-        <div class="absolute w-full">
+        <div class="w-full">
           <div class="flex items-center justify-center">
             <img
               src="assets/93114e5b608c3733ad26.png"
@@ -379,53 +390,69 @@
     </section>
 
     <!-- Our Goal -->
-    <section class="mt-44 w-7/12 md:flex items-center mx-auto text-white">
+    <section class=" md:py-44 goal  text-white">
+      <div class="items-center mx-auto md:flex md:w-7/12 container">
       <div class="md:w-3/12">
         <img src="assets/4d87d9ec71f2e63e7275.png"
         alt="Fyle">
       </div>
       <div class="md:w-9/12 md:flex items-center">
-        <div>
+        <div class="my-12 md:my-0 flex items-center justify-center md:block">
           <div
             class="rounded-full flex items-center justify-center w-44 h-44 border-4"
           >
             <h2 class="text-brand-green text-4xl">Our Goal</h2>
           </div>
         </div>
-        <div class="ml-[-30px] text-xl">
+        <div class="md:ml-[-30px] text-xl">
           <div class="flex items-center space-x-6">
             <div>
-            <div
-            class="w-10 h-10 rounded-full flex text-text-black justify-center items-center bg-[#CCF5E1]"
-          >
-            1
+            <div class="w-10 h-10 rounded-full flex text-text-black justify-center items-center bg-[#CCF5E1]">
+              1
+            </div>
           </div>
-        </div>
-          <div>
-          <p>
-            Squabs is looking for a production investment to create its first
-            two seasons in the entirety.
-          </p>
-          </div>
+            <div>
+              <p>
+              Squabs is looking for a production investment to create its first
+              two seasons in the entirety.
+              </p>
+            </div>
           </div>
           <div class="flex items-center space-x-6 mt-8">
             <div>
-            <div
-            class="w-10 h-10 rounded-full flex text-text-black justify-center items-center bg-[#FFF3D0]"
-          >
+            <div class="w-10 h-10 rounded-full flex text-text-black justify-center items-center bg-[#FFF3D0]">
             2
+            </div>
           </div>
+            <div>
+              <p>
+              Secure a licensing deal with major networks in order to reach an
+              audience beyond our instagram following.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+    </section>
+
+    <footer class="container">
+      <div class="w-8/12 md:w-2/12 pt-32 pb-24 mx-auto flex items-center justify-between">
+        <div>
+          <a href="">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgOEMwIDMuNTgxNzIgMy41ODE3MiAwIDggMEgzMkMzNi40MTgzIDAgNDAgMy41ODE3MiA0MCA4VjMyQzQwIDM2LjQxODMgMzYuNDE4MyA0MCAzMiA0MEg4QzMuNTgxNzIgNDAgMCAzNi40MTgzIDAgMzJWOFoiIGZpbGw9IiMxNzc4RjIiLz4KPHBhdGggZD0iTTIxLjI4MSAyOC4yNDc0VjIwLjczNDRIMjMuODE1MUwyNC4xOTE5IDE3Ljc5MjZIMjEuMjgxVjE1LjkxOTJDMjEuMjgxIDE1LjA3MDEgMjEuNTE3NSAxNC40ODkyIDIyLjczNTggMTQuNDg5MkgyNC4yNzkyVjExLjg2NjRDMjMuNTI4IDExLjc4NTkgMjIuNzcyOCAxMS43NDcxIDIyLjAxNzMgMTEuNzUwMkMxOS43Nzc0IDExLjc1MDIgMTguMjM5NSAxMy4xMTgzIDE4LjIzOTUgMTUuNjI4NFYxNy43ODcxSDE1LjcyMTJWMjAuNzI4OUgxOC4yNDQzVjI4LjI0NzRIMjEuMjgxWiIgZmlsbD0iI0Y3RjdGNyIvPgo8L3N2Zz4K" alt="Instagram">
+          </a>
         </div>
-          <div>
-          <p >
-            Secure a licensing deal with major networks in order to reach an
-            audience beyond our instagram following.
-          </p>
+        <div>
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgOEMwIDMuNTgxNzIgMy41ODE3MiAwIDggMEgzMkMzNi40MTgzIDAgNDAgMy41ODE3MiA0MCA4VjMyQzQwIDM2LjQxODMgMzYuNDE4MyA0MCAzMiA0MEg4QzMuNTgxNzIgNDAgMCAzNi40MTgzIDAgMzJWOFoiIGZpbGw9IiM1NUFDRUUiLz4KPHBhdGggZD0iTTI2Ljk5NjYgMTYuMzMwOUMyNy4wMDkgMTYuNDkxMSAyNy4wMDkgMTYuNjUwNiAyNy4wMDkgMTYuODEwMUMyNy4wMDkgMjEuNjkxMyAyMy4yOTM3IDI3LjMxNTcgMTYuNTA0IDI3LjMxNTdDMTQuNDExOSAyNy4zMTU3IDEyLjQ2ODQgMjYuNzEwMSAxMC44MzM1IDI1LjY1NzVDMTEuMTMwNSAyNS42OTE5IDExLjQxNjUgMjUuNzAzNiAxMS43MjUyIDI1LjcwMzZDMTMuNDUwOCAyNS43MDM2IDE1LjAzOTYgMjUuMTIwNiAxNi4zMDk0IDI0LjEyNTdDMTUuNTM4OSAyNC4xMTE5IDE0Ljc5MTggMjMuODU3NyAxNC4xNzI3IDIzLjM5ODdDMTMuNTUzNiAyMi45Mzk3IDEzLjA5MzMgMjIuMjk4OCAxMi44NTYxIDIxLjU2NTVDMTMuMDg0NCAyMS41OTk5IDEzLjMxNCAyMS42MjI2IDEzLjU1MzkgMjEuNjIyNkMxMy44ODQ2IDIxLjYyMjYgMTQuMjE3NCAyMS41NzY1IDE0LjUyNjcgMjEuNDk2N0MxMy42OTA2IDIxLjMyNzkgMTIuOTM4NyAyMC44NzQ3IDEyLjM5ODkgMjAuMjE0MkMxMS44NTkxIDE5LjU1MzcgMTEuNTY0NyAxOC43MjY2IDExLjU2NTcgMTcuODczNlYxNy44Mjc2QzEyLjA3NzMgMTguMTEyNiAxMi42NDkgMTguMjczIDEzLjIzNDIgMTguMjk1N0MxMi43Mjc1IDE3Ljk1OSAxMi4zMTE5IDE3LjUwMjEgMTIuMDI0NiAxNi45NjU4QzExLjczNzMgMTYuNDI5NSAxMS41ODcyIDE1LjgzMDQgMTEuNTg3NyAxNS4yMjE5QzExLjU4NzcgMTQuNTM2NSAxMS43Njk5IDEzLjkwNzQgMTIuMDg5NiAxMy4zNTk1QzEzLjAxNzQgMTQuNTAwOCAxNC4xNzQ2IDE1LjQzNDUgMTUuNDg2MiAxNi4xMDAxQzE2Ljc5NzkgMTYuNzY1NyAxOC4yMzQ3IDE3LjE0ODMgMTkuNzAzNiAxNy4yMjMyQzE5LjY0NDYgMTYuOTQ1MiAxOS42MTM5IDE2LjY2MTkgMTkuNjEyMiAxNi4zNzc2QzE5LjYxMjIgMTQuMzQyNiAyMS4yNTg3IDEyLjY4NTEgMjMuMzA0MSAxMi42ODUxQzI0LjM2NzYgMTIuNjg1MSAyNS4zMjc0IDEzLjEzMDYgMjYuMDAyNSAxMy44NTExQzI2LjgyOTEgMTMuNjkxMSAyNy42MjE5IDEzLjM4OTEgMjguMzQ1NSAxMi45NTg3QzI4LjA2OTggMTMuODEyIDI3LjQ5MjUgMTQuNTM1NSAyNi43MjE2IDE0Ljk5MzdDMjcuNDU0OCAxNC45MTAxIDI4LjE3MTMgMTQuNzE3MyAyOC44NDc0IDE0LjQyMTdDMjguMzQyNSAxNS4xNTggMjcuNzE2NyAxNS44MDM3IDI2Ljk5NjYgMTYuMzMxNlYxNi4zMzA5WiIgZmlsbD0iI0Y3RjdGNyIvPgo8L3N2Zz4K" alt="Instagram">
         </div>
+        <div>
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgOEMwIDMuNTgxNzIgMy41ODE3MiAwIDggMEgzMkMzNi40MTgzIDAgNDAgMy41ODE3MiA0MCA4VjMyQzQwIDM2LjQxODMgMzYuNDE4MyA0MCAzMiA0MEg4QzMuNTgxNzIgNDAgMCAzNi40MTgzIDAgMzJWOFoiIGZpbGw9IiMwMDc3QjUiLz4KPHBhdGggZD0iTTE1LjU3MzQgMTMuNTkxOUMxNS41NzM0IDEzLjg1NTIgMTUuNTIxNSAxNC4xMTYgMTUuNDIwNyAxNC4zNTkzQzE1LjMxOTkgMTQuNjAyNiAxNS4xNzIyIDE0LjgyMzcgMTQuOTg2IDE1LjAwOTlDMTQuNzk5OCAxNS4xOTYxIDE0LjU3ODcgMTUuMzQzOSAxNC4zMzU0IDE1LjQ0NDZDMTQuMDkyMSAxNS41NDU0IDEzLjgzMTMgMTUuNTk3MyAxMy41Njc5IDE1LjU5NzNDMTMuMzA0NiAxNS41OTczIDEzLjA0MzggMTUuNTQ1NCAxMi44MDA1IDE1LjQ0NDZDMTIuNTU3MiAxNS4zNDM5IDEyLjMzNjEgMTUuMTk2MSAxMi4xNDk5IDE1LjAwOTlDMTEuOTYzNyAxNC44MjM3IDExLjgxNTkgMTQuNjAyNiAxMS43MTUyIDE0LjM1OTNDMTEuNjE0NCAxNC4xMTYgMTEuNTYyNSAxMy44NTUyIDExLjU2MjUgMTMuNTkxOUMxMS41NjI1IDEzLjA2IDExLjc3MzggMTIuNTQ5OSAxMi4xNDk5IDEyLjE3MzhDMTIuNTI2IDExLjc5NzcgMTMuMDM2MSAxMS41ODY0IDEzLjU2NzkgMTEuNTg2NEMxNC4wOTk4IDExLjU4NjQgMTQuNjA5OSAxMS43OTc3IDE0Ljk4NiAxMi4xNzM4QzE1LjM2MjEgMTIuNTQ5OSAxNS41NzM0IDEzLjA2IDE1LjU3MzQgMTMuNTkxOVpNMTcuNDY3NCAxNy4xMTc0VjI4LjI0NDVIMjAuOTIyMVYyMi43NDE4QzIwLjkyMjEgMjEuMjg5OCAyMS4xOTU4IDE5Ljg4MzkgMjIuOTk1NiAxOS44ODM5QzI0Ljc3MTQgMTkuODgzOSAyNC43OTM0IDIxLjU0MzUgMjQuNzkzNCAyMi44MzMyVjI4LjI0NTJIMjguMjUwMlYyMi4xNDNDMjguMjUwMiAxOS4xNDU1IDI3LjYwNDYgMTYuODQyNCAyNC4xMDExIDE2Ljg0MjRDMjIuNDE5NSAxNi44NDI0IDIxLjI5MiAxNy43NjUgMjAuODMwNyAxOC42Mzg4SDIwLjc4MzlWMTcuMTE3NEgxNy40Njc0Wk0xMS44MzY4IDE3LjExNzRIMTUuMjk3N1YyOC4yNDQ1SDExLjgzNzVMMTEuODM2OCAxNy4xMTc0WiIgZmlsbD0iI0Y3RjdGNyIvPgo8L3N2Zz4K" alt="Instagram">
         </div>
+        <div>
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgOEMwIDMuNTgxNzIgMy41ODE3MiAwIDggMEgzMkMzNi40MTgzIDAgNDAgMy41ODE3MiA0MCA4VjMyQzQwIDM2LjQxODMgMzYuNDE4MyA0MCAzMiA0MEg4QzMuNTgxNzIgNDAgMCAzNi40MTgzIDAgMzJWOFoiIGZpbGw9IiNGRjAwMDAiLz4KPHBhdGggZD0iTTI4Ljc0NzkgMTQuOTU2M0MyOS4xNjY4IDE2LjU4OTggMjkuMTY2OCAxOS45OTk4IDI5LjE2NjggMTkuOTk5OEMyOS4xNjY4IDE5Ljk5OTggMjkuMTY2OCAyMy40MDk4IDI4Ljc0NzkgMjUuMDQzM0MyOC41MTUxIDI1Ljk0NjMgMjcuODM0IDI2LjY1NjcgMjYuOTcxNCAyNi44OTY4QzI1LjQwNDggMjcuMzMzMiAyMC4wMDAyIDI3LjMzMzIgMjAuMDAwMiAyNy4zMzMyQzIwLjAwMDIgMjcuMzMzMiAxNC41OTgyIDI3LjMzMzIgMTMuMDI4OSAyNi44OTY4QzEyLjE2MjcgMjYuNjUzIDExLjQ4MjUgMjUuOTQzNSAxMS4yNTI0IDI1LjA0MzNDMTAuODMzNSAyMy40MDk4IDEwLjgzMzUgMTkuOTk5OCAxMC44MzM1IDE5Ljk5OThDMTAuODMzNSAxOS45OTk4IDEwLjgzMzUgMTYuNTg5OCAxMS4yNTI0IDE0Ljk1NjNDMTEuNDg1MiAxNC4wNTM0IDEyLjE2NjMgMTMuMzQzIDEzLjAyODkgMTMuMTAyOEMxNC41OTgyIDEyLjY2NjUgMjAuMDAwMiAxMi42NjY1IDIwLjAwMDIgMTIuNjY2NUMyMC4wMDAyIDEyLjY2NjUgMjUuNDA0OCAxMi42NjY1IDI2Ljk3MTQgMTMuMTAyOEMyNy44Mzc3IDEzLjM0NjcgMjguNTE3OCAxNC4wNTYyIDI4Ljc0NzkgMTQuOTU2M1pNMTguMTY2OCAyMy4yMDgyTDIzLjY2NjggMTkuOTk5OEwxOC4xNjY4IDE2Ljc5MTVWMjMuMjA4MloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" alt="Instagram">
         </div>
       </div>
-    </section>
+    </footer>
 
     <!-- The Team -->
     <!-- <section class="the-team">
@@ -553,7 +580,21 @@
 
         new Splide("#squabs-slider", {
           type: "loop",
-          perPage: 3,
+          perPage: 1,
+          breakpoints: {
+            640: {
+              perPage: 1,
+            },
+            768: {
+              perPage: 2
+            },
+            1024: {
+              perPage: 3
+            }, 
+            1440: {
+              perPage: 3
+            },
+          },
           arrows: false,
           pagination: false,
         }).mount();
