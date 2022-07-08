@@ -134,8 +134,18 @@
         </div>
       </div>
     </footer>
-
-    
+    <style>
+      .slide-in {
+        opacity: 0;
+        transition: 1s;
+      }
+      .active {
+        opacity: 1;
+        transition: transform 0.5s;
+        -webkit-transition: transform 0.5s;
+        transform: translateX(0%);
+      }
+    </style>
     <script>
       let squabsLogo = document.querySelector(".hero-logo");
       let foreground = document.querySelector(".hero-background");
@@ -145,35 +155,54 @@
 
       let oldValue = 0;
       let newValue = 0;
+
       window.addEventListener("scroll", function () {
-        let value = window.scrollY;
-
-        if (value * 0.05 <= 40) {
-          squabsLogo.style.top = value * 0.05 + "%";
+        const slideInAt =
+          window.scrollY + window.innerHeight - canvas.height / 2;
+        const canvasTop =
+          canvas.getBoundingClientRect().top +
+          document.documentElement.scrollTop;
+        const imageBottom = canvas.height + canvasTop;
+        const isHalfShown = slideInAt > canvasTop;
+        const isNoScrolledPast = window.scrollY < imageBottom;
+        console.log(canvas.offsetTop);
+        if (isHalfShown && isNoScrolledPast) {
+          canvas.classList.add("active");
+        } else {
+          canvas.classList.remove("active");
         }
-        foreground.style.top = value * 1 + "px";
-
-        let canvasLeft = canvas.offsetLeft;
-
-        newValue = window.pageYOffset;
-        if (oldValue < newValue) {
-          if (canvasLeft >= 0) {
-            canvas.style.left = canvasLeft - 10 + "px";
-          }
-
-          console.log("Down");
-        } else if (oldValue > newValue) {
-          if (canvasLeft <= initialCanvasLeft) {
-            canvas.style.left = canvasLeft + 30 + "px";
-          }
-
-          console.log("Up");
-        }
-        oldValue = newValue;
-
-        console.log("Top: " + oldValue);
-        console.log("Current" + canvasLeft);
       });
+
+      // window.addEventListener("scroll", function () {
+      //   let value = window.scrollY;
+
+      //   if (value * 0.05 <= 40) {
+      //     squabsLogo.style.top = value * 0.05 + "%";
+      //   }
+      //   foreground.style.top = value * 1 + "px";
+
+      //   let canvasLeft = canvas.offsetLeft;
+
+      //   newValue = window.pageYOffset;
+      //   if (oldValue < newValue) {
+      //     if (canvasLeft >= 0) {
+      //       canvas.style.left = canvasLeft - 10 + "px";
+      //     }
+
+      //     console.log("Down");
+      //   } else if (oldValue > newValue) {
+      //     if (canvasLeft <= initialCanvasLeft) {
+      //       canvas.style.left = canvasLeft + 30 + "px";
+      //     }
+
+      //     console.log("Up");
+      //   }
+      //   oldValue = newValue;
+
+      //   console.log("Top: " + oldValue);
+      //   console.log("Current" + canvasLeft);
+      //   console.log(canvas.height, "height")
+      // });
     </script>
   </body>
 </html>
