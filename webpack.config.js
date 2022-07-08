@@ -71,8 +71,8 @@ module.exports = {
     //   filename: "index.html",
     // }),
     new HtmlWebpackPlugin({
-      template: "./src/nft.html",
-      filename: "nft.html",
+      template: "./src/index.html",
+      filename: "index.html",
     }),
   ],
 

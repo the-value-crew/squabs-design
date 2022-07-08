@@ -1,115 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Squabs</title>
-    <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
-  </head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Squabs</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
   <body>
-    <!-- Navbar -->
-    <navbar class="hidden md:block bg-brand-gray-dark">
-      <div class="container">
-        <ul class="py-4 flex items-center justify-between">
-          <li>
-            <a
-              class="cursor-pointer text-white text-uppercase text-lg font-medium"
-              href="index.html"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="cursor-pointer text-white text-uppercase text-lg font-medium"
-              href="index.html"
-              >The Park</a
-            >
-          </li>
-          <li>
-            <div class="bg-black bg-opacity-25 py-2 px-4 rounded-full">
-              <a
-                class="cursor-pointer text-white text-uppercase text-lg text-white font-medium"
-                href="./about.html"
-                >About Squabs</a
+    <hero id="home">
+      <!-- Navbar -->
+      <navbar>
+        <div class="container">
+          <ul class="pt-8 flex items-center justify-between">
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="index.html"
+                >Home</a
               >
-            </div>
-          </li>
-          <li>
-            <a
-              class="cursor-pointer text-white text-uppercase text-lg font-medium"
-              href="index.html"
-              >Buy a Merch</a
-            >
-          </li>
-          <li>
-            <a
-              class="cursor-pointer text-white text-uppercase text-lg font-medium"
-              href="contact.html"
-              >Buy a Squab</a
-            >
-          </li>
-        </ul>
-      </div>
-    </navbar>
-
-    <!-- Mobile Navbar Button -->
-    <div class="block md:hidden absolute right-0">
-      <button class="open-navbar">
-        <img
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQiIGhlaWdodD0iNTQiIHZpZXdCb3g9IjAgMCA1NCA1NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuNzUgNDAuNUg0Ny4yNVYzNkg2Ljc1VjQwLjVaTTYuNzUgMjkuMjVINDcuMjVWMjQuNzVINi43NVYyOS4yNVpNNi43NSAxMy41VjE4SDQ3LjI1VjEzLjVINi43NVoiIGZpbGw9IiNFNkVBRjAiLz4KPC9zdmc+Cg=="
-          alt="Open Navbar"
-        />
-      </button>
-    </div>
-
-    <!-- Mobile Navbar -->
-    <section id="mobile-navbar" class="hidden">
-      <div class="z-40 top-0 w-screen h-screen backdrop-blur-sm fixed"></div>
-      <div
-        class="py-12 z-50 top-0 w-screen h-screen bg-brand-gray-dark opacity-80 fixed"
-      >
-        <div class="close-navbar pl-20 mb-10">
-          <img
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIzLjY2NTQgMi42ODMzN0wyMS4zMTU0IDAuMzMzMzc0TDExLjk5ODcgOS42NTAwNEwyLjY4MjAzIDAuMzMzMzc0TDAuMzMyMDMxIDIuNjgzMzdMOS42NDg3IDEyTDAuMzMyMDMxIDIxLjMxNjdMMi42ODIwMyAyMy42NjY3TDExLjk5ODcgMTQuMzVMMjEuMzE1NCAyMy42NjY3TDIzLjY2NTQgMjEuMzE2N0wxNC4zNDg3IDEyTDIzLjY2NTQgMi42ODMzN1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo="
-            alt="Cross"
-          />
-        </div>
-        <nav>
-          <ul class="space-y-7 text-center uppercase text-white">
-            <li>
-              <a class="font-semibold" href="">Home</a>
             </li>
             <li>
-              <a class="font-semibold" href="">Buy a Squab</a>
+              <a class="cursor-pointer text-lg font-medium" href="index.html"
+                >The Park</a
+              >
             </li>
             <li>
-              <a class="font-semibold" href="">About</a>
+              <div class="bg-black bg-opacity-25 py-2 px-4 rounded-full">
+                <a
+                  class="cursor-pointer text-lg text-white font-medium"
+                  href="./about.html"
+                  >About Squabs</a
+                >
+              </div>
             </li>
             <li>
-              <a class="font-semibold" href="">Buy Merch</a>
+              <a class="cursor-pointer text-lg font-medium" href="index.html"
+                >Buy a Merch</a
+              >
+            </li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="contact.html"
+                >Buy a Squab</a
+              >
             </li>
           </ul>
-        </nav>
+        </div>
+      </navbar>
+
+      <img
+        class="hero-background invisible"
+        src="assets/9f4430d349071e71776f.png"
+        alt="NYC Buildings"
+      />
+
+      <img
+        class="hero-logo"
+        src="assets/8b8b23baa25e8d56de8c.png"
+        alt="Squabs"
+      />
+
+      <img
+        class="hero-foreground"
+        src="assets/c35a092f38ba8e5927f1.png"
+        alt="Foreground"
+      />
+
+      <img
+        class="hero-squabs"
+        src="assets/b36548f6cbe15ad308cd.png"
+        alt="Squabs"
+      />
+    </hero>
+
+    <!-- The Park -->
+    <section class="py-60 z-10 bg-brand-black" id="park">
+      <div class="container">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <h1 class="text-white text-6xl">The Park</h1>
+            <div class="mt-12">
+              <p class="text-white text-lg">
+                The PARK will become operational once the presale preiod is
+                over. It contains a canvas accessible only to wallets containing
+                at least one SQUAB. Like any good park, this is the place at
+                drawsrawl, or write expletives Each NFT-holder will be able to
+                paint a pixel on the wall every fifteen minustes. Think of it as
+                a collaborative art experiment for the cryptoshphere. A
+                members-only canvas for the discerning minds of crypto twitter.
+              </p>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              class="absolute canvas"
+              src="assets/780e8b95fe8d554529b9.png"
+              alt="Canvas"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
-    <div id="nft-body">
-      <div class="coming-soon-page-wrapper">
-        <div class="coming-soon-page-message text-[#EED878]">
-          <marquee class="text-xl">Coming Soon...</marquee>
-        </div>
-      </div>
-      <img
-        id="nft-image"
-        src="assets/15fd6642e458bcd3c84b.png"
-        alt="Coming Soon"
-      />
-    </div>
-
     <footer class="bg-brand-gray-dark">
-      <div>
+      <div class="container">
         <div
           class="w-8/12 md:w-2/12 pt-32 pb-24 mx-auto flex items-center justify-between"
         >
@@ -142,13 +134,46 @@
         </div>
       </div>
     </footer>
+
+    
+    <script>
+      let squabsLogo = document.querySelector(".hero-logo");
+      let foreground = document.querySelector(".hero-background");
+      let canvas = document.querySelector(".canvas");
+
+      let initialCanvasLeft = canvas.offsetLeft;
+
+      let oldValue = 0;
+      let newValue = 0;
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        if (value * 0.05 <= 40) {
+          squabsLogo.style.top = value * 0.05 + "%";
+        }
+        foreground.style.top = value * 1 + "px";
+
+        let canvasLeft = canvas.offsetLeft;
+
+        newValue = window.pageYOffset;
+        if (oldValue < newValue) {
+          if (canvasLeft >= 0) {
+            canvas.style.left = canvasLeft - 10 + "px";
+          }
+
+          console.log("Down");
+        } else if (oldValue > newValue) {
+          if (canvasLeft <= initialCanvasLeft) {
+            canvas.style.left = canvasLeft + 30 + "px";
+          }
+
+          console.log("Up");
+        }
+        oldValue = newValue;
+
+        console.log("Top: " + oldValue);
+        console.log("Current" + canvasLeft);
+      });
+    </script>
   </body>
-
-  <script>
-    let image = document.getElementById("nft-image");
-
-    if (screen.width < 676) {
-      image.src = "assets/c8054fd5d1ca5462ca96.png";
-    }
-  </script>
 </html>
