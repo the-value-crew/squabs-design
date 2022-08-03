@@ -6,99 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Squabs</title>
   </head>
+  <body class="bg-brand-gray-dark">
     <!-- About hero -->
     <hero>
       <!-- Navbar -->
-      <navbar class="hidden md:block">
-        <div class="container">
-          <ul class="pt-8 flex items-center justify-between">
-            <li>
+    <navbar class="hidden md:block bg-brand-gray-dark">
+      <div class="container">
+        <ul class="py-4 flex items-center justify-between">
+          <li>
+            <a
+              class="cursor-pointer text-white text-uppercase text-lg font-medium"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="cursor-pointer text-white text-uppercase text-lg font-medium"
+              href="index.html"
+              >The Park</a
+            >
+          </li>
+          <li>
+            <div class="bg-black bg-opacity-25 py-2 px-4 rounded-full">
+
+            <a
+              class="cursor-pointer text-white text-uppercase text-lg text-white font-medium"
+              href="./about.html"
+              >About Squabs</a
+            >
+
+            </div>
+          </li>
+          <li>
+            <a
+              class="cursor-pointer text-white text-uppercase text-lg font-medium"
+              href="/ecom.html"
+              >Buy a Merch</a
+            >
+          </li>
+          <li>
               <a
-                class="cursor-pointer text-uppercase text-lg font-medium"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="cursor-pointer text-uppercase text-lg font-medium"
-                href="index.html"
-                >The Park</a
-              >
-            </li>
-            <li>
-              <div class="bg-black bg-opacity-25 py-2 px-4 rounded-full">
-                <a
-                  class="cursor-pointer text-uppercase text-lg text-white font-medium"
-                  href="./about.html"
-                  >About Squabs</a
-                >
-              </div>
-            </li>
-            <li>
-              <a
-                class="cursor-pointer text-uppercase text-lg font-medium"
-                href="index.html"
-                >Buy a Merch</a
-              >
-            </li>
-            <li>
-              <a
-                class="cursor-pointer text-uppercase text-lg font-medium"
-                href="contact.html"
+                class="cursor-pointer text-white text-uppercase text-lg font-medium"
+                href="/nft.html"
                 >Buy a Squab</a
               >
-            </li>
-          </ul>
-        </div>
-      </navbar>
-
-      
-      <!-- Mobile Navbar Button -->
-      <div class="block md:hidden absolute right-0">
-        <button class="open-navbar ">
-          <img src="<%=require('./assets/images/icons/hamburger.svg')%>" alt="Open Navbar">
-        </button>
+          </li>
+        </ul>
       </div>
+    </navbar>
 
-      <!-- Mobile Navbar -->
+    <!-- Mobile Navbar Button -->
+    <div class="block md:hidden absolute right-0">
+      <button class="open-navbar">
+        <img src="./assets/images/icons/hamburger.svg" alt="Open Navbar" />
+      </button>
+    </div>
+
+    <!-- Mobile Navbar -->
     <section id="mobile-navbar" class="hidden">
-      <div class="z-40 top-0 w-screen h-screen backdrop-blur-sm fixed">
-
-      </div>
-      <div class="py-12 z-50 top-0 w-screen h-screen bg-brand-gray-dark opacity-80	fixed">
+      <div class="z-40 top-0 w-screen h-screen backdrop-blur-sm fixed"></div>
+      <div
+        class="py-12 z-50 top-0 w-screen h-screen bg-brand-gray-dark opacity-80 fixed"
+      >
         <div class="close-navbar pl-20 mb-10">
-          <img src="<%=require('./assets/images/icons/cross.svg')%>" alt="Cross">
+          <img src="./assets/images/icons/cross.svg" alt="Cross" />
         </div>
         <nav>
           <ul class="space-y-7 text-center uppercase text-white">
             <li>
-              <a class="font-semibold	" href="">Home</a>
+              <a class="font-semibold" href="/">Home</a>
             </li>
             <li>
-              <a class="font-semibold	" href="">Buy a Squab</a>
+              <a class="font-semibold" href="/nft.html">Buy a Squab</a>
             </li>
             <li>
-              <a class="font-semibold	" href="">About</a>
+              <a class="font-semibold" href="/about.html">About</a>
             </li>
             <li>
-              <a class="font-semibold	" href="">Buy Merch</a>
+              <a class="font-semibold" href="/ecom.html">Buy Merch</a>
             </li>
           </ul>
         </nav>
       </div>
     </section>
 
+
       <!-- Hero content -->
       <div class="flex justify-center items-center">
-      <picture>
-        <source media="(min-width: 640px)" srcset="<%=require('./assets/images/about-hero.png')%>">
-        <img src="<%=require('./assets/images/about-hero-mobile.png')%>" alt="Squabs" />
-      </picture>
-    </div>
+        <picture>
+          <source
+            media="(min-width: 640px)"
+            srcset="./assets/images/about-hero.png"
+          />
+          <img src="./assets/images/about-hero-mobile.png" alt="Squabs" />
+        </picture>
+      </div>
     </hero>
-
-    
 
     <!-- Small Intro -->
     <section class="mt-12 container text-white text-lg text-center">
@@ -118,7 +122,7 @@
           <div class="md:hidden">
             <img
               class="hero-background"
-              src="<%=require('./assets/images/about-problems.png')%>"
+              src="./assets/images/about-problems.png"
               alt="Problems"
             />
           </div>
@@ -183,7 +187,7 @@
           <div class="hidden md:block md:w-1/2">
             <img
               class="hero-background"
-              src="<%=require('./assets/images/about-problems.png')%>"
+              src="./assets/images/about-problems.png"
               alt="Problems"
             />
           </div>
@@ -198,7 +202,7 @@
           <div class="md:w-1/2">
             <img
               class="hero-background"
-              src="<%=require('./assets/images/about-solutions.png')%>"
+              src="./assets/images/about-solutions.png"
               alt="Problems"
             />
           </div>
@@ -286,14 +290,14 @@
       <!-- Squabs -->
       <div class="splide" id="squabs-slider">
         <div class="splide__track">
-          <ul class="splide__list  gap-4">
+          <ul class="splide__list gap-4">
             <li class="splide__splide">
               <div>
                 <div class="squab-detail relative">
                   <div class="squabs-background w-full h-[330px]"></div>
                   <img
                     class="absolute bottom-[-16px]"
-                    src="<%=require('./assets/images/fyle.png')%>"
+                    src="./assets/images/fyle.png"
                     alt="Fyle"
                   />
                 </div>
@@ -314,7 +318,7 @@
                   <div class="squabs-background w-full h-[330px]"></div>
                   <img
                     class="absolute bottom-[-16px]"
-                    src="<%=require('./assets/images/fyle.png')%>"
+                    src="./assets/images/fyle.png"
                     alt="Fyle"
                   />
                 </div>
@@ -336,7 +340,7 @@
                   <div class="squabs-background w-full h-[330px]"></div>
                   <img
                     class="absolute bottom-[-16px]"
-                    src="<%=require('./assets/images/fyle.png')%>"
+                    src="./assets/images/fyle.png"
                     alt="Fyle"
                   />
                 </div>
@@ -381,58 +385,59 @@
 
         <div class="w-full">
           <div class="flex items-center justify-center">
-            <img
-              src="<%=require('./assets/images/squabs-group.png')%>"
-              alt="Squabs Group"
-            />
+            <img src="./assets/images/squabs-group.png" alt="Squabs Group" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- Our Goal -->
-    <section class=" md:py-44 goal  text-white">
+    <section class="md:py-44 goal text-white">
       <div class="items-center mx-auto md:flex md:w-7/12 container">
-      <div class="md:w-3/12">
-        <img src="<%=require('./assets/images/fyle.png')%>"
-        alt="Fyle">
-      </div>
-      <div class="md:w-9/12 md:flex items-center">
-        <div class="my-12 md:my-0 flex items-center justify-center md:block">
-          <div
-            class="rounded-full flex items-center justify-center w-44 h-44 border-4"
-          >
-            <h2 class="text-brand-green text-4xl">Our Goal</h2>
+        <div class="md:w-3/12">
+          <img src="./assets/images/fyle.png" alt="Fyle" />
+        </div>
+        <div class="md:w-9/12 md:flex items-center">
+          <div class="my-12 md:my-0 flex items-center justify-center md:block">
+            <div
+              class="rounded-full flex items-center justify-center w-44 h-44 border-4"
+            >
+              <h2 class="text-brand-green text-4xl">Our Goal</h2>
+            </div>
+          </div>
+          <div class="md:ml-[-30px] text-xl">
+            <div class="flex items-center space-x-6">
+              <div>
+                <div
+                  class="w-10 h-10 rounded-full flex text-text-black justify-center items-center bg-[#CCF5E1]"
+                >
+                  1
+                </div>
+              </div>
+              <div>
+                <p>
+                  Squabs is looking for a production investment to create its
+                  first two seasons in the entirety.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-6 mt-8">
+              <div>
+                <div
+                  class="w-10 h-10 rounded-full flex text-text-black justify-center items-center bg-[#FFF3D0]"
+                >
+                  2
+                </div>
+              </div>
+              <div>
+                <p>
+                  Secure a licensing deal with major networks in order to reach
+                  an audience beyond our instagram following.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="md:ml-[-30px] text-xl">
-          <div class="flex items-center space-x-6">
-            <div>
-            <div class="w-10 h-10 rounded-full flex text-text-black justify-center items-center bg-[#CCF5E1]">
-              1
-            </div>
-          </div>
-            <div>
-              <p>
-              Squabs is looking for a production investment to create its first
-              two seasons in the entirety.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-6 mt-8">
-            <div>
-            <div class="w-10 h-10 rounded-full flex text-text-black justify-center items-center bg-[#FFF3D0]">
-            2
-            </div>
-          </div>
-            <div>
-              <p>
-              Secure a licensing deal with major networks in order to reach an
-              audience beyond our instagram following.
-              </p>
-            </div>
-          </div>
-      </div>
       </div>
     </section>
 
@@ -443,35 +448,21 @@
         >
           <div>
             <a href="https://www.instagram.com/squabsnyc/">
-              <img
-                
-                src="<%=require('./assets/images/icons/instagram.svg')%>"
-                alt="Instagram"
-              />
+              <img src="./assets/images/icons/instagram.svg" alt="Instagram" />
             </a>
           </div>
           <div>
-            <img
-              src="<%=require('./assets/images/icons/twitter.svg')%>"
-              alt="Twitter"
-            />
+            <img src="./assets/images/icons/twitter.svg" alt="Twitter" />
           </div>
           <div>
-            <img
-              src="<%=require('./assets/images/icons/discord.svg')%>"
-              alt="Instagram"
-            />
+            <img src="./assets/images/icons/discord.svg" alt="Instagram" />
           </div>
           <div>
-            <img
-              src="<%=require('./assets/images/icons/youtube.svg')%>"
-              alt="Instagram"
-            />
+            <img src="./assets/images/icons/youtube.svg" alt="Instagram" />
           </div>
         </div>
       </div>
     </footer>
-
 
     <!-- The Team -->
     <!-- <section class="the-team">
@@ -485,7 +476,7 @@
                   <div>
                     <div class="flex items-center justify-center">
                       <img
-                        src="<%=require('./assets/images/jonah.png')%>"
+                        src="./assets/images/jonah.png"
                         alt="Jonah"
                       />
                     </div>
@@ -499,7 +490,7 @@
                   <div>
                     <div class="flex items-center justify-center">
                       <img
-                        src="<%=require('./assets/images/jonah.png')%>"
+                        src="./assets/images/jonah.png"
                         alt="Jonah"
                       />
                     </div>
@@ -513,7 +504,7 @@
                   <div>
                     <div class="flex items-center justify-center">
                       <img
-                        src="<%=require('./assets/images/jonah.png')%>"
+                        src="./assets/images/jonah.png"
                         alt="Jonah"
                       />
                     </div>
@@ -527,7 +518,7 @@
                   <div>
                     <div class="flex items-center justify-center">
                       <img
-                        src="<%=require('./assets/images/jonah.png')%>"
+                        src="./assets/images/jonah.png"
                         alt="Jonah"
                       />
                     </div>
@@ -541,7 +532,7 @@
                   <div>
                     <div class="flex items-center justify-center">
                       <img
-                        src="<%=require('./assets/images/jonah.png')%>"
+                        src="./assets/images/jonah.png"
                         alt="Jonah"
                       />
                     </div>
@@ -555,7 +546,7 @@
                   <div>
                     <div class="flex items-center justify-center">
                       <img
-                        src="<%=require('./assets/images/jonah.png')%>"
+                        src="./assets/images/jonah.png"
                         alt="Jonah"
                       />
                     </div>
@@ -569,7 +560,7 @@
                   <div>
                     <div class="flex items-center justify-center">
                       <img
-                        src="<%=require('./assets/images/jonah.png')%>"
+                        src="./assets/images/jonah.png"
                         alt="Jonah"
                       />
                     </div>
@@ -605,13 +596,13 @@
               perPage: 1,
             },
             768: {
-              perPage: 2
+              perPage: 2,
             },
             1024: {
-              perPage: 3
-            }, 
+              perPage: 3,
+            },
             1440: {
-              perPage: 3
+              perPage: 3,
             },
           },
           arrows: false,
@@ -620,8 +611,6 @@
       });
     </script>
 
-    <script>
-      
-    </script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>

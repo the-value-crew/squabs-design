@@ -4,7 +4,8 @@ $peach-gray: #d2cfce;
 hero#home {
   display: block;
   position: relative;
-  background-image:  url("../assets/images/hero-buildings.png"), linear-gradient($green, $peach-gray);
+  background-image: url("../assets/images/hero-buildings.png"),
+    linear-gradient($green, $peach-gray);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -12,24 +13,42 @@ hero#home {
   background-size: cover;
 }
 
-
 .hero-logo {
   z-index: 0;
   position: absolute;
-  top: 0;
+  top: 40%;
+
+  @screen md {
+    top: 0;
+  }
+}
+
+.hero-background {
+  height: 450px;
+
+  @screen md {
+    height: auto;
+  }
 }
 
 .hero-foreground {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: 200px;
+  @screen md {
+    top: 0;
+  }
   z-index: 4;
 }
 
 .hero-squabs {
   z-index: 5;
   position: absolute;
-  top: 0;
+  top: 195px;
+
+  @screen md {
+    top: 0px;
+  }
   // width: 900px;
   // left: 50%;
   // transform: translateX(-50%);
@@ -39,11 +58,12 @@ hero#home {
   // }
 }
 
-
-.canvas{
-  left: 611px;
+.canvas {
+  @screen lg {
+    left: 611px;
+  }
 }
 
-#park{
+#park {
   z-index: 1;
 }

@@ -28,27 +28,27 @@
             >
           </li>
           <li>
-            <div class="bg-black bg-opacity-25 py-2 px-4 rounded-full">
-              <a
-                class="cursor-pointer text-white text-uppercase text-lg text-white font-medium"
-                href="./about.html"
-                >About Squabs</a
-              >
-            </div>
+            <a
+              class="cursor-pointer text-white text-uppercase text-lg text-white font-medium"
+              href="./about.html"
+              >About Squabs</a
+            >
           </li>
           <li>
             <a
               class="cursor-pointer text-white text-uppercase text-lg font-medium"
-              href="index.html"
+              href="/ecom.html"
               >Buy a Merch</a
             >
           </li>
           <li>
-            <a
-              class="cursor-pointer text-white text-uppercase text-lg font-medium"
-              href="contact.html"
-              >Buy a Squab</a
-            >
+            <div class="bg-black bg-opacity-25 py-2 px-4 rounded-full">
+              <a
+                class="cursor-pointer text-white text-uppercase text-lg font-medium"
+                href="/nft.html"
+                >Buy a Squab</a
+              >
+            </div>
           </li>
         </ul>
       </div>
@@ -57,10 +57,7 @@
     <!-- Mobile Navbar Button -->
     <div class="block md:hidden absolute right-0">
       <button class="open-navbar">
-        <img
-          src="<%=require('./assets/images/icons/hamburger.svg')%>"
-          alt="Open Navbar"
-        />
+        <img src="./assets/images/icons/hamburger.svg" alt="Open Navbar" />
       </button>
     </div>
 
@@ -71,40 +68,32 @@
         class="py-12 z-50 top-0 w-screen h-screen bg-brand-gray-dark opacity-80 fixed"
       >
         <div class="close-navbar pl-20 mb-10">
-          <img
-            src="<%=require('./assets/images/icons/cross.svg')%>"
-            alt="Cross"
-          />
+          <img src="./assets/images/icons/cross.svg" alt="Cross" />
         </div>
         <nav>
           <ul class="space-y-7 text-center uppercase text-white">
             <li>
-              <a class="font-semibold" href="">Home</a>
+              <a class="font-semibold" href="/">Home</a>
             </li>
             <li>
-              <a class="font-semibold" href="">Buy a Squab</a>
+              <a class="font-semibold" href="/nft.html">Buy a Squab</a>
             </li>
             <li>
-              <a class="font-semibold" href="">About</a>
+              <a class="font-semibold" href="/about.html">About</a>
             </li>
             <li>
-              <a class="font-semibold" href="">Buy Merch</a>
+              <a class="font-semibold" href="/ecom.html">Buy Merch</a>
             </li>
           </ul>
         </nav>
       </div>
     </section>
 
-    <div id="nft-body">
-      <div class="coming-soon-page-wrapper">
-        <div class="coming-soon-page-message text-[#EED878]">
-          <marquee class="text-xl">Coming Soon...</marquee>
-        </div>
-      </div>
+    <div id="ecom-body">
       <img
-        id="nft-image"
-        src="<%=require('./assets/images/squabs-nft-bg.png')%>"
+        src="./assets/images/squabs-nft-merch.png"
         alt="Coming Soon"
+        id="ecomMerchImage"
       />
     </div>
 
@@ -115,41 +104,29 @@
         >
           <div>
             <a href="">
-              <img
-                src="<%=require('./assets/images/icons/instagram.svg')%>"
-                alt="Instagram"
-              />
+              <img src="./assets/images/icons/instagram.svg" alt="Instagram" />
             </a>
           </div>
           <div>
-            <img
-              src="<%=require('./assets/images/icons/twitter.svg')%>"
-              alt="Instagram"
-            />
+            <img src="./assets/images/icons/twitter.svg" alt="Instagram" />
           </div>
           <div>
-            <img
-              src="<%=require('./assets/images/icons/discord.svg')%>"
-              alt="Instagram"
-            />
+            <img src="./assets/images/icons/discord.svg" alt="Instagram" />
           </div>
           <div>
-            <img
-              src="<%=require('./assets/images/icons/youtube.svg')%>"
-              alt="Instagram"
-            />
+            <img src="./assets/images/icons/youtube.svg" alt="Instagram" />
           </div>
         </div>
       </div>
     </footer>
 
+    <script>
+      let image = document.getElementById("ecomMerchImage");
+
+      if (screen.width < 676) {
+        image.src = "./assets/images/squabs-merch-min.png";
+      }
+    </script>
+    <script type="module" src="/main.js"></script>
   </body>
-
-  <script>
-    let image = document.getElementById("nft-image");
-
-    if (screen.width < 676) {
-      image.src = "<%=require('./assets/images/nft-bg-mobile.png')%>";
-    }
-  </script>
 </html>
