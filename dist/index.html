@@ -71,6 +71,26 @@
       />
     </hero>
 
+    <div class="flex bg-black top-0 fixed w-screen h-screen z-50 video-wrapper">
+      <video class="w-100 h-100" muted autoplay>
+        <source
+          src="assets/b87296dfb0cf101fbab6.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    
+
+    <script>
+      let videoWrapper = document.querySelector('.video-wrapper');
+      let video = document.querySelector('video');
+
+      video.addEventListener('ended', function() {
+        video.style.display = "none";
+        videoWrapper.style.display = "none";
+      }, false);
+    </script>
+
     <!-- The Park -->
     <section class="py-60 z-10 bg-brand-black" id="park">
       <div class="container">
@@ -165,53 +185,53 @@
       let oldValue = 0;
       let newValue = 0;
 
-      window.addEventListener("scroll", function () {
-        const slideInAt =
-          window.scrollY + window.innerHeight - canvas.height / 2;
-        const canvasTop =
-          canvas.getBoundingClientRect().top +
-          document.documentElement.scrollTop;
-        const imageBottom = canvas.height + canvasTop;
-        const isHalfShown = slideInAt > canvasTop;
-        const isNoScrolledPast = window.scrollY < imageBottom;
-        console.log(canvas.offsetTop);
-        if (isHalfShown && isNoScrolledPast) {
-          canvas.classList.add("active");
-        } else {
-          canvas.classList.remove("active");
-        }
-      });
-
       // window.addEventListener("scroll", function () {
-      //   let value = window.scrollY;
-
-      //   if (value * 0.05 <= 40) {
-      //     squabsLogo.style.top = value * 0.05 + "%";
+      //   const slideInAt =
+      //     window.scrollY + window.innerHeight - canvas.height / 2;
+      //   const canvasTop =
+      //     canvas.getBoundingClientRect().top +
+      //     document.documentElement.scrollTop;
+      //   const imageBottom = canvas.height + canvasTop;
+      //   const isHalfShown = slideInAt > canvasTop;
+      //   const isNoScrolledPast = window.scrollY < imageBottom;
+      //   console.log(canvas.offsetTop);
+      //   if (isHalfShown && isNoScrolledPast) {
+      //     canvas.classList.add("active");
+      //   } else {
+      //     canvas.classList.remove("active");
       //   }
-      //   foreground.style.top = value * 1 + "px";
-
-      //   let canvasLeft = canvas.offsetLeft;
-
-      //   newValue = window.pageYOffset;
-      //   if (oldValue < newValue) {
-      //     if (canvasLeft >= 0) {
-      //       canvas.style.left = canvasLeft - 10 + "px";
-      //     }
-
-      //     console.log("Down");
-      //   } else if (oldValue > newValue) {
-      //     if (canvasLeft <= initialCanvasLeft) {
-      //       canvas.style.left = canvasLeft + 30 + "px";
-      //     }
-
-      //     console.log("Up");
-      //   }
-      //   oldValue = newValue;
-
-      //   console.log("Top: " + oldValue);
-      //   console.log("Current" + canvasLeft);
-      //   console.log(canvas.height, "height")
       // });
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        if (value * 0.05 <= 40) {
+          squabsLogo.style.top = value * 0.05 + "%";
+        }
+        foreground.style.top = value * 1 + "px";
+
+        let canvasLeft = canvas.offsetLeft;
+
+        newValue = window.pageYOffset;
+        if (oldValue < newValue) {
+          if (canvasLeft >= 0) {
+            canvas.style.left = canvasLeft - 10 + "px";
+          }
+
+          console.log("Down");
+        } else if (oldValue > newValue) {
+          if (canvasLeft <= initialCanvasLeft) {
+            canvas.style.left = canvasLeft + 10 + "px";
+          }
+
+          console.log("Up");
+        }
+        oldValue = newValue;
+
+        console.log("Top: " + oldValue);
+        console.log("Current" + canvasLeft);
+        console.log(canvas.height, "height")
+      });
     </script>
   </body>
 </html>

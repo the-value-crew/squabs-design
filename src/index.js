@@ -1,19 +1,19 @@
 import "./sass/main.scss";
 
-console.log("YOlo");
+// console.log("YOlo");
 
-// Navbar
-let mobileNavbar = document.querySelector("#mobile-navbar");
-let closeMobileNavbarBtn = document.querySelector(".close-navbar");
-let openMobileNavbarBtn = document.querySelector(".open-navbar");
+// // Navbar
+// let mobileNavbar = document.querySelector("#mobile-navbar");
+// let closeMobileNavbarBtn = document.querySelector(".close-navbar");
+// let openMobileNavbarBtn = document.querySelector(".open-navbar");
 
-let showMobileNavbar = () => {
-  mobileNavbar.classList.remove("hidden");
-};
+// let showMobileNavbar = () => {
+//   mobileNavbar.classList.remove("hidden");
+// };
 
-let hideMobileNavbar = () => {
-  mobileNavbar.classList.add("hidden");
-};
+// let hideMobileNavbar = () => {
+//   mobileNavbar.classList.add("hidden");
+// };
 
-closeMobileNavbarBtn.addEventListener("click", hideMobileNavbar);
-openMobileNavbarBtn.addEventListener("click", showMobileNavbar);
+// closeMobileNavbarBtn.addEventListener("click", hideMobileNavbar);
+// openMobileNavbarBtn.addEventListener("click", showMobileNavbar);
