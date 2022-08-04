@@ -236,15 +236,17 @@
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
         let initialStartValuePercent = 0;
+        let scrollBottomLimit = 40;
 
         if(window.screen.width < 640){
           initialStartValuePercent = 40;
+          scrollBottomLimit = 500;
         }
 
         console.log('Initial vlaue');
         console.log(initialStartValuePercent);
 
-        if (value * 0.05 <= 500) {
+        if (value * 0.05 <= scrollBottomLimit) {
           squabsLogo.style.top = (value * 0.05) + initialStartValuePercent + "%";
         }
         foreground.style.top = value * 1 + "px";
