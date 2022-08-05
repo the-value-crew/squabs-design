@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="./public/assets/images/favicon.png">
+
     <title>Squabs</title>
   </head>
   <body>
@@ -251,27 +254,27 @@
         }
         foreground.style.top = value * 1 + "px";
 
-        let canvasLeft = canvas.offsetLeft;
+        // let canvasLeft = canvas.offsetLeft;
 
-        newValue = window.pageYOffset;
-        if (oldValue < newValue) {
-          if (canvasLeft >= 0) {
-            canvas.style.left = canvasLeft - 10 + "px";
-          }
+        // newValue = window.pageYOffset;
+        // if (oldValue < newValue) {
+        //   if (canvasLeft >= 0) {
+        //     canvas.style.left = canvasLeft - 10 + "px";
+        //   }
 
-          console.log("Down");
-        } else if (oldValue > newValue) {
-          if (canvasLeft <= initialCanvasLeft) {
-            canvas.style.left = canvasLeft + 10 + "px";
-          }
+        //   console.log("Down");
+        // } else if (oldValue > newValue) {
+        //   if (canvasLeft <= initialCanvasLeft) {
+        //     canvas.style.left = canvasLeft + 10 + "px";
+        //   }
 
-          console.log("Up");
-        }
-        oldValue = newValue;
+        //   console.log("Up");
+        // }
+        // oldValue = newValue;
 
-        console.log("Top: " + oldValue);
-        console.log("Current" + canvasLeft);
-        console.log(canvas.height, "height");
+        // console.log("Top: " + oldValue);
+        // console.log("Current" + canvasLeft);
+        // console.log(canvas.height, "height");
       });
     </script>
     <script type="module" src="/main.js"></script>
