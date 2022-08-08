@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="./public/assets/images/favicon.png">
+
+    <title>Squabs</title>
+  </head>
+  <body>
+    <hero id="home">
+      <!-- Navbar -->
+      <navbar class="absolute w-full z-50 hidden md:block">
+        <div class="container">
+          <ul class="pt-8 flex items-center justify-between">
+            <li>
+              <div class="bg-black bg-opacity-25 py-2 px-4 rounded-full">
+                <a
+                  class="text-white cursor-pointer text-lg font-medium"
+                  href="index.html"
+                >
+                  Home
+                </a>
+              </div>
+            </li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="index.html"
+                >The Park</a
+              >
+            </li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="/about.html"
+                >About Squabs</a
+              >
+            </li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="/ecom.html"
+                >Buy a Merch</a
+              >
+            </li>
+            <li>
+              <a class="cursor-pointer text-lg font-medium" href="/nft.html"
+                >Buy a Squab</a
+              >
+            </li>
+          </ul>
+        </div>
+      </navbar>
+
+      <!-- Mobile Navbar Button -->
+      <div class="block md:hidden absolute z-50 right-0">
+        <button class="open-navbar">
+          <img src="./assets/images/icons/hamburger.svg" alt="Open Navbar" />
+        </button>
+      </div>
+
+      <!-- Mobile Navbar -->
+      <section id="mobile-navbar" class="hidden">
+        <div class="z-40 top-0 w-screen h-screen backdrop-blur-sm fixed"></div>
+        <div
+          class="py-12 z-50 top-0 w-screen h-screen bg-brand-gray-dark opacity-80 fixed"
+        >
+          <div class="close-navbar pl-20 mb-10">
+            <img src="./assets/images/icons/cross.svg" alt="Cross" />
+          </div>
+          <nav>
+            <ul class="space-y-7 text-center uppercase text-white">
+              <li>
+                <a class="font-semibold" href="/">Home</a>
+              </li>
+              <li>
+                <a class="font-semibold" href="/nft.html">Buy a Squab</a>
+              </li>
+              <li>
+                <a class="font-semibold" href="/about.html">About</a>
+              </li>
+              <li>
+                <a class="font-semibold" href="/ecom.html">Buy Merch</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <img
+        class="hero-background invisible"
+        src="./assets/images/hero-buildings.png"
+        alt="NYC Buildings"
+      />
+
+      <img
+        class="hero-logo"
+        src="./assets/images/squabs-nyc.png"
+        alt="Squabs"
+      />
+
+      <img
+        class="hero-foreground"
+        src="./assets/images/hero-foreground.png"
+        alt="Foreground"
+      />
+
+      <img
+        class="hero-squabs"
+        src="./assets/images/hero-birds.png"
+        alt="Squabs"
+      />
+    </hero>
+
+    <div
+      class="flex items-center bg-black top-0 fixed w-screen h-screen z-50 video-wrapper"
+    >
+      <video class="w-100 h-100" muted autoplay>
+        <source src="./assets/videos/intro.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <script>
+      let videoWrapper = document.querySelector(".video-wrapper");
+      let video = document.querySelector("video");
+
+      // Initially disable scrolling
+      disableScrolling();
+
+      function disableScrolling() {
+        var x = window.scrollX;
+        var y = window.scrollY;
+        window.onscroll = function () {
+          window.scrollTo(x, y);
+        };
+      }
+
+      function enableScrolling() {
+        window.onscroll = function () {};
+      }
+
+      // Enable scrolling when video ends
+      video.addEventListener(
+        "ended",
+        function () {
+          video.style.display = "none";
+          videoWrapper.style.display = "none";
+          enableScrolling();
+        },
+        false
+      );
+    </script>
+
+    <!-- The Park -->
+    <section class="py-24 lg:py-60 z-10 bg-brand-black" id="park">
+      <div class="container">
+        <div class="grid lg:grid-cols-2 gap-4">
+          <div>
+            <h1 class="text-white text-4xl lg:text-6xl">The Park</h1>
+            <div class="mt-12">
+              <p class="text-white text-lg">
+                The PARK will become operational once the presale preiod is
+                over. It contains a canvas accessible only to wallets containing
+                at least one SQUAB. Like any good park, this is the place at
+                drawsrawl, or write expletives Each NFT-holder will be able to
+                paint a pixel on the wall every fifteen minustes. Think of it as
+                a collaborative art experiment for the cryptoshphere. A
+                members-only canvas for the discerning minds of crypto twitter.
+              </p>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              class="lg:absolute canvas"
+              src="./assets/images/canvas.png"
+              alt="Canvas"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-brand-gray-dark">
+      <div class="container">
+        <div
+          class="w-8/12 md:w-4/12 lg:w-2/12 pt-32 pb-24 mx-auto flex items-center justify-between"
+        >
+          <div>
+            <a href="https://www.instagram.com/squabsnyc/" target="_blank">
+              <img src="./assets/images/icons/instagram.svg" alt="Instagram" />
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/squabsnyc" target="_blank">
+              <img src="./assets/images/icons/twitter.svg" alt="Twitter" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://discord.com/channels/@me/929556556880687125"
+              target="_blank"
+            >
+              <img src="./assets/images/icons/discord.svg" alt="Discord" />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/channel/UCHMsjMZBpgirAl-wjNU6Qtg>">
+              <img src="./assets/images/icons/youtube.svg" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+ 
+    <script>
+      let squabsLogo = document.querySelector(".hero-logo");
+      let foreground = document.querySelector(".hero-background");
+      let canvas = document.querySelector(".canvas");
+
+      let initialCanvasLeft = canvas.offsetLeft;
+
+      let oldValue = 0;
+      let newValue = 0;
+
+      // window.addEventListener("scroll", function () {
+      //   const slideInAt =
+      //     window.scrollY + window.innerHeight - canvas.height / 2;
+      //   const canvasTop =
+      //     canvas.getBoundingClientRect().top +
+      //     document.documentElement.scrollTop;
+      //   const imageBottom = canvas.height + canvasTop;
+      //   const isHalfShown = slideInAt > canvasTop;
+      //   const isNoScrolledPast = window.scrollY < imageBottom;
+      //   console.log(canvas.offsetTop);
+      //   if (isHalfShown && isNoScrolledPast) {
+      //     canvas.classList.add("active");
+      //   } else {
+      //     canvas.classList.remove("active");
+      //   }
+      // });
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        let initialStartValuePercent = 0;
+        let scrollBottomLimit = 40;
+
+        if(window.screen.width < 640){
+          initialStartValuePercent = 40;
+          scrollBottomLimit = 500;
+        }
+
+        console.log('Initial vlaue');
+        console.log(initialStartValuePercent);
+
+        if (value * 0.05 <= scrollBottomLimit) {
+          squabsLogo.style.top = (value * 0.05) + initialStartValuePercent + "%";
+        }
+        foreground.style.top = value * 1 + "px";
+
+        // let canvasLeft = canvas.offsetLeft;
+
+        // newValue = window.pageYOffset;
+        // if (oldValue < newValue) {
+        //   if (canvasLeft >= 0) {
+        //     canvas.style.left = canvasLeft - 10 + "px";
+        //   }
+
+        //   console.log("Down");
+        // } else if (oldValue > newValue) {
+        //   if (canvasLeft <= initialCanvasLeft) {
+        //     canvas.style.left = canvasLeft + 10 + "px";
+        //   }
+
+        //   console.log("Up");
+        // }
+        // oldValue = newValue;
+
+        // console.log("Top: " + oldValue);
+        // console.log("Current" + canvasLeft);
+        // console.log(canvas.height, "height");
+      });
+    </script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
