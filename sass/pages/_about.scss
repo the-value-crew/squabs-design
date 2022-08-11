@@ -76,20 +76,158 @@
 .about-problems-content {
   background-image: url("../assets/images/problems-bg.png");
   background-repeat: no-repeat;
-  padding-bottom: 270px;
+  padding-bottom: 410px;
   padding-top: 54px;
+  padding-right: 46px;
+  
+  background-size: 100% 800px;
+
+  @screen md {
+    padding-bottom: 352px;
+  }
+
+  @screen lg {
+    background-size: 100% 700px;
+  }
+
+  @screen xl {
+    padding-bottom: 340px;
+  }
+
+  @screen 2xl {
+    background-size: auto;
+    padding-right: 146px;
+  }
+}
+
+.purple-bleeding-bg {
+  background-image: url("../assets/images/problems-bg.png");
+  background-repeat: no-repeat;
+  padding-bottom: 270px;
   padding-right: 24px;
+
+  padding-top: 30px;
+
+  background-size: 100% 450px;
+
+  @screen lg {
+    padding-top: 0;
+
+    background-size: contain;
+  }
+
+  @screen xl {
+    padding-top: 0;
+
+    background-size: contain;
+  }
 }
 
 .number {
   background-image: url("../assets/images/num-bg.png");
   background-position: center;
   background-repeat: no-repeat;
+  color: #0a6830;
+  font-weight: bold;
+  font-size: 28px;
 }
 
 .about-solutions-bg {
   background-image: url("../assets/images/solutions-textbg.png");
   background-repeat: no-repeat;
   padding-bottom: 370px;
-  padding-right: 127px;
+
+  background-size: 100% 940px;
+
+  padding-right: 33px;
+
+  @screen md {
+    padding-right: 50px;
+  }
+
+  @screen lg {
+    padding-right: 24px;
+    background-size: 100% 860px;
+    padding-right: 70px;
+  }
+
+  @screen xl {
+    padding-bottom: 398px;
+  }
+
+  @screen 2xl {
+    padding-right: 297px;
+    background-size: auto;
+  }
+}
+
+.blue-bleeding-bg {
+  background-image: url("../assets/images/solutions-textbg.png");
+  background-repeat: no-repeat;
+
+  background-size: 100% 600px;
+  padding-left: 50px;
+  padding-top: 60px;
+  padding-right: 40px;
+
+  padding-bottom: 277px;
+
+  @screen md {
+    padding-top: 59px;
+    background-size: 100% 650px;
+  }
+
+  @screen lg {
+    padding-top: 100px;
+    padding-bottom: 370px;
+    background-size: contain;
+  }
+
+  @screel xl {
+    background-size: contain;
+  }
+
+  @screen 2xl {
+    background-size: auto;
+  }
+}
+
+.our-audience-body {
+  @screen md {
+    padding-right: 80px;
+  }
+
+  @screen lg {
+    padding-left: 71px;
+    padding-top: 38px;
+    padding-right: 46px;
+  }
+
+  @screen xl {
+    padding-top: 99px;
+    padding-right: 60px;
+  }
+
+  @screen 2xl {
+    padding-top: 160px;
+    padding-right: 96px;
+    padding-left: 92px;
+  }
+}
+
+.goal-body {
+  @screen md {
+    padding-right: 30px;
+  }
+  @screen lg {
+    padding-right: 41px;
+  }
+
+  @screen xl {
+    padding-right: 120px;
+  }
+
+  @screen 2xl {
+    padding-right: 240px;
+  }
 }
