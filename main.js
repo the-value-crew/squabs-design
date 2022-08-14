@@ -1,7 +1,4 @@
-import './sass/main.scss';
-
-// Splide
-import "./node_modules/@splidejs/splide/dist/js/splide.min.js";
+import "./sass/main.scss";
 
 // Navbar
 let mobileNavbar = document.querySelector("#mobile-navbar");
