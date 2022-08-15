@@ -5,7 +5,11 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/x-icon" href="./public/assets/images/favicon.png">
+      <link
+        rel="icon"
+        type="image/x-icon"
+        href="./public/assets/images/favicon.png"
+      />
 
       <title>Squabs</title>
     </head>
@@ -94,14 +98,20 @@
     <div id="nft-body">
       <div class="coming-soon-page-wrapper">
         <div class="coming-soon-page-message text-[#EED878]">
-          <marquee class="text-xl">Coming Soon...</marquee>
+          <p class="text-xl">Coming Soon...</p>
         </div>
       </div>
-      <img
-        id="nft-image"
-        src="./assets/images/squabs-nft-bg.png"
-        alt="Coming Soon"
-      />
+      <picture>
+        <source
+          media="(max-width:676px)"
+          srcset="/assets/images/nft-bg-mobile.png"
+        />
+        <img
+          id="nft-image"
+          src="/assets/images/squabs-nft-bg.png"
+          alt="Coming Soon"
+        />
+      </picture>
     </div>
 
     <footer class="bg-brand-gray-dark">
@@ -127,13 +137,5 @@
       </div>
     </footer>
   </body>
-
-  <script>
-    let image = document.getElementById("nft-image");
-
-    if (screen.width < 676) {
-      image.src = "./assets/images/nft-bg-mobile.png";
-    }
-  </script>
   <script type="module" src="/main.js"></script>
 </html>

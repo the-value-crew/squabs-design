@@ -92,11 +92,17 @@
     </section>
 
     <div id="ecom-body">
-      <img
-        src="./assets/images/squabs-nft-merch.png"
-        alt="Coming Soon"
-        id="ecomMerchImage"
-      />
+      <picture>
+        <source
+          media="(max-width:676px)"
+          srcSet="./assets/images/squabs-merch-min.png"
+        />
+        <img
+          id="ecomMerchImage"
+          src="./assets/images/squabs-nft-merch.png"
+          alt="Coming Soon"
+        />
+      </picture>
     </div>
 
     <footer class="bg-brand-gray-dark">
@@ -121,14 +127,6 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      let image = document.getElementById("ecomMerchImage");
-
-      if (screen.width < 676) {
-        image.src = "./assets/images/squabs-merch-min.png";
-      }
-    </script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

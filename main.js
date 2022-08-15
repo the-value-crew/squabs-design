@@ -1,5 +1,4 @@
 import "./sass/main.scss";
-
 // Navbar
 let mobileNavbar = document.querySelector("#mobile-navbar");
 let closeMobileNavbarBtn = document.querySelector(".close-navbar");
